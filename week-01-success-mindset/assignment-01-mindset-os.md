@@ -182,8 +182,6 @@ P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — 
 
 ### Public Link
 
-Paste your link here:
-
 [https://subhamay-bhattacharyya.github.io/.github/blogs/how-subhamay-built-aws-architecture-pattern.html](https://subhamay-bhattacharyya.github.io/.github/blogs/how-subhamay-built-aws-architecture-pattern.html)
 
 ---
