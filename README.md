@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Subhamay Bhattacharyya |
+| **LinkedIn** | [subhamay-bhattacharyya](https://www.linkedin.com/in/subhamay-bhattacharyya/) |
+| **Location** | Connecticut, USA |
+| **Background** | Data Engineer, Cloud, DevOps & Snowflake |
+| **Goal** | Architect secure, scalable cloud infrastructure with AWS. |
 
 ---
 
@@ -28,8 +28,8 @@
 
 This is not a course. It is an internship-style program — real deployments, real pipelines, real evidence reviewed by mentors every week.
 
-- 🌐 Program Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🌐 Program Website: <https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme>
+- 💬 Discord Community: <https://discord.pravinmishra.com?utm_source=github&utm_medium=readme>
 - 📺 YouTube: [Pravin Mishra](https://www.youtube.com/@awswithpravinmishra)
 - 🔗 Instructor: [LinkedIn](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
 
@@ -131,7 +131,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
+| 01 | Success Mindset | 🔄 In Progress| 🔄 In Progress | — | — |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
