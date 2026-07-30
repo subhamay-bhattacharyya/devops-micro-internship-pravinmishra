@@ -131,7 +131,7 @@ Week 01 → Success Mindset
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ✅ Completed| ✅ Solved | — | — |
+| 01 | Success Mindset | ✅ Completed| ✅ Solved | — | https://subhamay-bhattacharyya.github.io/.github/blogs/how-subhamay-built-aws-architecture-pattern.html |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
