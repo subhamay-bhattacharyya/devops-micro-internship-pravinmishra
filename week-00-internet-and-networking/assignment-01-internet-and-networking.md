@@ -34,7 +34,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+I learned that networks are systems where computers exchange data through agreed-upon rules called protocols. The OSI model helps organize these rules into 7 layers, and TCP/IP is the most common protocol suite used on the internet. Understanding IP addresses, DNS, and HTTP showed me how my everyday internet activities actually work behind the scenes.
 
 ---
 
@@ -59,7 +59,15 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+When users worldwide access EpicReads.com, several networking technologies work together:
+
+First, their browser uses TCP/IP, the foundational protocol suite that enables internet communication. The user's device looks up EpicReads' IP address (the server's unique identifier) through DNS, allowing it to locate the website hosted in Finland.
+
+Next, your friend's server uses packet switching—breaking the website data (HTML, images, text) into small packets that travel independently across different routes through the internet, then reassemble at the user's device. This ensures efficient data delivery even if some routes are congested.
+
+Finally, HTTPS encrypts the connection between the user's browser and the Finland server, protecting sensitive bookstore data like passwords and payment information during transmission.
+
+Together, these technologies enable seamless, secure global access to EpicReads.
 
 ---
 
@@ -102,18 +110,24 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* **React** or **Vue.js** — Modern JavaScript frameworks for building interactive user interfaces
+* **Tailwind CSS** — Utility-first CSS framework for responsive, modern UI design
+* **Redux** or **Vuex** — State management library for handling complex application data
+* **Axios** or **Fetch API** — HTTP client for communicating with the backend API
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* **Node.js with Express** — Fast, scalable JavaScript runtime and web framework
+* **Python (Django or Flask)** — Robust frameworks for handling business logic and API requests
+* **RESTful API** or **GraphQL** — API protocols for frontend-backend communication
+* **Authentication (JWT or OAuth 2.0)** — Secure user login and session management
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* **PostgreSQL** — Reliable relational database for storing book catalog, orders, and user data
+* **Redis** — In-memory cache for faster product searches and shopping cart management
+* **MongoDB** — NoSQL option for flexible document storage (reviews, metadata)
+* **Elasticsearch** — Search engine for fast book searching and filtering by title, author, genre
 
 ---
 
@@ -142,7 +156,9 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+1. DNS (Domain Name System) is a system that translates human-readable domain names (like epicreads.com) into IP addresses (like 52.172.142.222). When users type epicreads.com in their browser, DNS acts like a phone directory—it looks up the domain and returns the correct IP address, allowing browsers to find and connect to the server.
+
+2. Use an A record to connect epicreads.com to 52.172.142.222. An A record maps a domain name to an IPv4 address. Since 52.172.142.222 is an IPv4 address (four numbers separated by dots), the A record is the correct choice. Once configured, users can type epicreads.com instead of remembering the long IP address.
 
 ---
 
@@ -218,7 +234,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-Add your URL here...
+https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7489052200514715648-pTXk/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY
 ```
 
 ---
@@ -227,7 +243,38 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+I do not have formal training on DevOps, though I have hands-on experience and certifications in AWS, Terraform, GitHub Actions, Unix/Linux, and AI tools like ChatGPT. Today, I decided to start from zero and embarked upon a journey with the DevOps for Beginners Cohort run by Pravin Mishra. Here's what I learned:
+
+🤖 ChatGPT & Prompt Engineering
+
+I discovered how to craft effective prompts to learn networking as a beginner. By asking ChatGPT to explain with analogies, real-world examples, and visual descriptions, I built a strong foundation in network protocols like TCP/IP, HTTP/HTTPS, and packet switching—concepts that felt complex at first.
+
+🌐 Internet & Networking Fundamentals
+
+When users access a website globally (like EpicReads hosted in Finland), packet switching breaks data into small packets that travel independently across the internet. TCP/IP protocols govern this communication, IP addresses route packets to the correct destination, and HTTPS encrypts sensitive data. This is how the internet works at scale.
+
+🏗️ Application Architecture
+
+I learned the difference between two-tier and three-tier architectures:
+
+- Two-Tier: Frontend directly talks to database (simple but doesn't scale)
+- Three-Tier: Frontend → Backend → Database (scalable, secure, industry standard)
+
+Modern apps like EpicReads use three-tier because it separates concerns and allows independent scaling.
+
+📡 DNS: The Internet's Phone Directory
+
+DNS translates human-readable domains (epicreads.com) into IP addresses (52.172.142.222). An A record connects IPv4 addresses to domain names—this is why you type epicreads.com instead of remembering long IP addresses.
+
+💻 VS Code Setup for DevOps
+
+I configured VS Code with essential extensions for cloud infrastructure work: Terraform, Docker, GitHub Copilot, and remote SSH access. A well-configured editor accelerates your DevOps workflow.
+
+Every step of this journey reinforces that DevOps is about understanding systems—from the network layer to application architecture. Excited to continue learning! 🚀
+
+P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://lnkd.in/e8ZJzQra · Start your DevOps journey: https://lnkd.in/eGQ2s9wB
+
+#DevOps #Linux #AWS #Terraform #CloudEngineering #LearningJourney #TechCommunity
 
 ---
 
@@ -235,19 +282,34 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+• **ChatGPT prompting workflow** — Asking for analogies, real-world examples, and visual explanations was a game-changer. Got from confused to confident on networking in a single prompt iteration.
+
+• **Understanding three-tier architecture** — My years in AWS made this intuitive. Immediately saw why loosely coupled systems beat tightly coupled ones.
+
+• **Creating the Mermaid diagram** — Visual representation of two-tier vs three-tier was satisfying and clarified my thinking.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+• **TCP/IP depth** — I know *what* TCP/IP does, but the mechanism (sequence numbers, sliding windows, congestion control) needs more study. Surface-level understanding isn't enough.
+
+• **Simplifying for beginners** — My natural explanations lean technical. Writing 50–100 word summaries without jargon required multiple rewrites.
+
+• **Resisting the urge to over-architect** — When explaining EpicReads, I kept wanting to add CDNs, caching, monitoring, etc. Had to force myself to stay focused on the core concepts.
+
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+• **Study TCP/IP mechanics hands-on** — Use Wireshark to see actual packet flows, study sequence numbers and ACKs, understand retransmission logic.
+
+• **Write beginner guides** — Challenge myself to explain one DevOps concept per day in 100 words max, targeting someone with zero networking background.
+
+• **Participate in cohort discussions** — Comment on classmates' posts, ask clarifying questions, learn from different perspectives.
+
+• **Build a mini lab** — Set up a local two-tier app and intentionally break it to see scalability limits firsthand.
 
 ---
 
