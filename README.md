@@ -1,6 +1,6 @@
 # DevOps Micro Internship with Agentic AI — My Journey
 
-![Cohort](https://img.shields.io/badge/Cohort-3-blue?style=for-the-badge)
+![Cohort](https://img.shields.io/badge/Cohort-self_paced-blue?style=for-the-badge)
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-Pravin_Mishra-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
 ![Weeks](https://img.shields.io/badge/Weeks_Completed-0%2F14-green?style=for-the-badge)
@@ -130,8 +130,8 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7489052200514715648-pTXk/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY | — |
-| 01 | Success Mindset | 🔄 In Progress| 🔄 In Progress | — | https://subhamay-bhattacharyya.github.io/.github/blogs/how-subhamay-built-aws-architecture-pattern.html |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | [Post URL](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7489052200514715648-pTXk/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog URL](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-00-internet-and-networking-assignment) |
+| 01 | Success Mindset | 🔄 In Progress| 🔄 In Progress | — | [Blog URL](https://subhamay-bhattacharyya.github.io/.github/blogs/how-subhamay-built-aws-architecture-pattern.html) |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
