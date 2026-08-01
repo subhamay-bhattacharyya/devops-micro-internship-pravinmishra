@@ -57,7 +57,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 *Earn a badge each week. To unlock: remove the `<!--` and `-->` from the badge line below.*
 
-*Share your stack:* `https://github.com/YOUR-USERNAME/devops-micro-internship-pravinmishra#my-devops-stack`
+<!-- *Share your stack:* `https://github.com/subhamay-bhattacharyya/devops-micro-internship-pravinmishra#my-devops-stack` -->
 
 <!-- **Preview — what your full stack looks like:**
 
