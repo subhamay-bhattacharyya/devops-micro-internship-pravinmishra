@@ -618,15 +618,21 @@ Examples:
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+The pace and rigor of Pravin's cohort structure mirrors my own Scrum practice — it's validating that I naturally gravitate toward this cadence. My strength is seeing patterns across systems quickly, but Week 1 showed me I need to slow down and listen before pattern-matching.
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+Perfectionism in documentation and setup delays hands-on experimentation. I spent cycles designing "the right way" to organize notes/materials before actually diving into the technical problems. Classic me: I want the infrastructure perfect before building the application.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+### Daily Agentic Standup: 7:00 AM, 10 minutes
+
+* What feedback loop did I observe.
+* What assumption did I test or break this week?
+* One thing I'll intentionally leave "imperfect" today to ship faster
+
+Tracked in: Jira task under DMI project, daily comment. Friday rollup into cohort retrospective.
 
 ### LinkedIn Post
 
