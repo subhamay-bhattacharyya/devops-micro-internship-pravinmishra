@@ -638,7 +638,7 @@ Tracked in: Jira task under DMI project, daily comment. Friday rollup into cohor
 
 Paste your LinkedIn post link here:
 
-`Add your URL here`
+https://www.linkedin.com/feed/update/urn:li:activity:7489869147271495680/
 
 ---
 
