@@ -10,9 +10,9 @@ In this assignment, you will build a local Claude Skills system by creating the 
 
 ---
 
-# Task 1 — Create the Skill Folder Structure
+## Task 1 — Create the Skill Folder Structure
 
-## Goal
+### Goal
 
 Create the required `.claude/skills/` directory structure for all skills.
 
@@ -20,13 +20,13 @@ Create the required `.claude/skills/` directory structure for all skills.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/skills/` folder with all 4 subfolders visible
 
-Add your screenshot here.
+![Screenshot 1](./screenshots/week-02-agentic-ai-assignment-03-01.png)
 
 ---
 
-# Task 2 — Add the Skill Files
+## Task 2 — Add the Skill Files
 
-## Goal
+### Goal
 
 Place all required skill files into their correct directories and verify their configuration.
 
@@ -34,19 +34,19 @@ Place all required skill files into their correct directories and verify their c
 
 #### Screenshot 2 — `.claude/skills/scaffold-terraform/` open in VS Code showing both `SKILL.md` and `template-spec.md`
 
-Add your screenshot here.
+![Screenshot 2](./screenshots/week-02-agentic-ai-assignment-03-02.png)
 
 ---
 
 #### Screenshot 3 — Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
 
-Add your screenshot here.
+![Screenshot 3](./screenshots/week-02-agentic-ai-assignment-03-03.png)
 
 ---
 
-# Task 3 — Run /scaffold-terraform
+## Task 3 — Run /scaffold-terraform
 
-## Goal
+### Goal
 
 Execute the `/scaffold-terraform` skill to generate a full Terraform infrastructure setup.
 
@@ -54,19 +54,19 @@ Execute the `/scaffold-terraform` skill to generate a full Terraform infrastruct
 
 #### Screenshot 4 — Claude's response showing the scaffold complete with the file list
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-02-agentic-ai-assignment-03-04.png)
 
 ---
 
 #### Screenshot 5 — VS Code sidebar showing the `terraform/` folder with all generated files inside
 
-Add your screenshot here.
+![Screenshot 5](./screenshots/week-02-agentic-ai-assignment-03-05.png)
 
 ---
 
-# Task 4 — Run terraform init and /tf-plan
+## Task 4 — Run terraform init and /tf-plan
 
-## Goal
+### Goal
 
 Initialize Terraform and execute the `/tf-plan` skill to observe plan execution and output analysis.
 
@@ -74,11 +74,11 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 #### Screenshot 6 — Claude's `/tf-plan` response showing it ran the command and analyzed the result (pass or auth error both count)
 
-Add your screenshot here.
+![Screenshot 6](./screenshots/week-02-agentic-ai-assignment-03-06.png)
 
 ---
 
-# Submission Instructions
+## Submission Instructions
 
 - Ensure `.claude/skills/` folder and all skill files are committed to your GitHub repository
 - Run all commands successfully and capture required screenshots
@@ -86,31 +86,32 @@ Add your screenshot here.
 
 ---
 
-## GitHub Repository URL
+### GitHub Repository URL
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+<https://github.com/subhamay-bhattacharyya/Ultimate-Agentic-DevOps-with-Claude-Code>
 
-## LinkedIn post URL
+### LinkedIn post URL
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+<https://github.com/subhamay-bhattacharyya/Ultimate-Agentic-DevOps-with-Claude-Code>
+
 ---
 
-# Completion Checklist
+## Completion Checklist
 
-- [ ] `.claude/skills/` folder created with all 4 skill folders
-- [ ] All skill files placed correctly
-- [ ] `tf-plan/SKILL.md` shows correct `allowed-tools` restrictions
-- [ ] `/scaffold-terraform` executed successfully
-- [ ] Terraform files generated inside `terraform/` folder
-- [ ] `terraform init` executed successfully
-- [ ] `/tf-plan` executed and output analyzed by Claude
-- [ ] All required screenshots added
-- [ ] GitHub repository URL included
-- [ ] LinkedIn post URL included
+- [x] `.claude/skills/` folder created with all 4 skill folders
+- [x] All skill files placed correctly
+- [x] `tf-plan/SKILL.md` shows correct `allowed-tools` restrictions
+- [x] `/scaffold-terraform` executed successfully
+- [x] Terraform files generated inside `terraform/` folder
+- [x] `terraform init` executed successfully
+- [x] `/tf-plan` executed and output analyzed by Claude
+- [x] All required screenshots added
+- [x] GitHub repository URL included
+- [x] LinkedIn post URL included
 
 ---
 
