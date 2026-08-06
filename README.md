@@ -131,7 +131,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7489052200514715648-pTXk/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-00-internet-and-networking-assignment.html) |
-| 01 | Success Mindset | ✅ Completed| ✅ Completed | [LinkedIn](hhttps://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_shortcuts-dont-save-time-they-move-the-share-7489869144427991040-TpWi/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-01-success-mindset) |
+| 01 | Success Mindset | ✅ Completed| ✅ Completed | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_shortcuts-dont-save-time-they-move-the-share-7489869144427991040-TpWi/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-01-success-mindset) |
 | 02 | Agentic AI with Claude Code | 🔄 In Progress | 🔄 In Progress | — | — |
 | 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
