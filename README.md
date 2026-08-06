@@ -13,7 +13,7 @@
 ## About Me
 
 | | |
-|---|---|
+| --- | --- |
 | **Name** | Subhamay Bhattacharyya |
 | **LinkedIn** | [subhamay-bhattacharyya](https://www.linkedin.com/in/subhamay-bhattacharyya/) |
 | **Location** | Connecticut, USA |
