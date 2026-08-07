@@ -34,19 +34,39 @@ Analyze the configuration differences between the three agents and demonstrate u
 
 #### 1. Why does the cost optimizer use Haiku instead of Sonnet?
 
-Add your answer here...
+| Factor | Advantage |
+|--------|-----------|
+| **Performance** | Haiku is 2-3x faster—lower latency for real-time optimization analysis |
+| **Cost** | Haiku is ~40-50% cheaper—per-token cost is significantly lower |
+| **Complexity** | Task requires pattern matching and rule application, not deep reasoning |
+| **Scalability** | Speed benefits thousands of resource/configuration analyses more than reasoning depth |
+| **Accuracy** | Haiku is sufficiently accurate; Sonnet's reasoning capability is unnecessary |
 
 ---
 
 #### 2. Why does the security auditor NOT have Write in its tools list?
 
-Add your answer here...
+| Reason | Explanation |
+|--------|-------------|
+| **Functional Role** | Security auditor's job is to **review and report**, not to change anything |
+| **Technical Prevention** | Without Write access, it **physically cannot modify** the infrastructure it is auditing |
+| **Tool Requirements** | Agent only needs **Read, Grep, Glob** tools to accomplish its audit task |
+| **Unnecessary Capability** | Write is not required for the auditor's work—it would be an unused tool |
+| **Practical Confirmation** | Audit report explicitly stated **no files were modified**, validating the tool list design |
 
 ---
 
 #### 3. Why does the tf-writer use `inherit` instead of a specific model?
 
-Add your answer here...
+| Reason | Explanation |
+|--------|-------------|
+| **Task Complexity** | Generating Terraform is the most complex and highest-stakes of the three tasks |
+| **Model Selection** | Should run on the **strongest model available** to ensure quality and reliability |
+| **Inheritance Benefit** | `inherit` makes tf-writer use the **same model as the main session** (Opus) |
+| **No Fixed Pinning** | Avoids being locked to a specific model version or tier |
+| **Quality Alignment** | Keeps tf-writer's output quality **aligned with the parent session's capabilities** |
+| **Future-Proof** | Automatically benefits from **future model upgrades** without editing the agent file |
+| **Operational Efficiency** | Single model per workflow; no manual reconfiguration needed when models change |
 
 ---
 
@@ -110,22 +130,22 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+<https://github.com/subhamay-bhattacharyya/Ultimate-Agentic-DevOps-with-Claude-Code>
 
 ---
 
 # Completion Checklist
 
-- [ ] `.claude/agents/` folder contains all 3 agent files
-- [ ] Screenshot 2 shows correct `security-auditor.md` configuration
-- [ ] Screenshot 3 shows correct `cost-optimizer.md` configuration
-- [ ] All 3 written answers completed 
-- [ ] Security auditor executed successfully
-- [ ] Cost optimizer executed successfully
-- [ ] Security report is visible with findings
-- [ ] Cost report is visible with recommendations
-- [ ] All required screenshots added
-- [ ] GitHub repo updated with agents
+- [x] `.claude/agents/` folder contains all 3 agent files
+- [x] Screenshot 2 shows correct `security-auditor.md` configuration
+- [x] Screenshot 3 shows correct `cost-optimizer.md` configuration
+- [x] All 3 written answers completed 
+- [x] Security auditor executed successfully
+- [x] Cost optimizer executed successfully
+- [x] Security report is visible with findings
+- [x] Cost report is visible with recommendations
+- [x] All required screenshots added
+- [x] GitHub repo updated with agents
 
 ---
 
