@@ -91,7 +91,7 @@ Run three tests that prove Claude remembers what you told it — without you say
 
 Paste your Linkedin post link here:
 
-`Add your URL here`
+[LinkedIn Post](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmibypravinmishra-agenticai-claudecode-activity-7492292726697365505-rvx7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY)
 
 ---
 
@@ -112,7 +112,7 @@ Paste your forked repository URL here:
 - [x] Claude recalled hero colors correctly (Screenshot 5)
 - [x] Claude refused JavaScript request based on memory (Screenshot 6)
 - [x] All screenshots added and committed to GitHub repo
-- [ ] Linkedin post created.
+- [x] Linkedin post created.
 
 ---
 
