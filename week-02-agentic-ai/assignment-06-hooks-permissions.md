@@ -76,7 +76,7 @@ Configure Claude Code permissions and connect the hook scripts created in the pr
 
 #### Screenshot 5 — `settings.json` open in VS Code showing permissions and hooks configuration
 
-![Screenshot 4](./screenshots/week-02-agentic-ai-assignment-06-05.png)
+![Screenshot 5](./screenshots/week-02-agentic-ai-assignment-06-05.png)
 
 ---
 
@@ -90,6 +90,8 @@ Prove the prompt-level hook works by typing a destructive prompt and verifying i
 
 #### Screenshot 6 — UserPromptSubmit hook blocking the destructive prompt
 
+![Screenshot 6](./screenshots/week-02-agentic-ai-assignment-06-06.png)
+
 ---
 
 # Task 7 — Test the PreToolUse Hook
@@ -101,6 +103,8 @@ Prove the tool-level hook works by asking Claude to execute a dangerous Bash com
 ### Evidence
 
 #### Screenshot 7 — PreToolUse hook blocking terraform destroy
+
+![Screenshot 7](./screenshots/week-02-agentic-ai-assignment-06-07.png)
 
 ---
 
@@ -114,7 +118,11 @@ Prove the logging hook runs after a successful command execution and records Ter
 
 #### Screenshot 8 — Claude running terraform validate successfully
 
+![Screenshot 8](./screenshots/week-02-agentic-ai-assignment-06-08.png)
+
 #### Screenshot 9 — `.claude/deploy.log` showing the logged command
+
+![Screenshot 9](./screenshots/week-02-agentic-ai-assignment-06-09.png)
 
 ---
 
