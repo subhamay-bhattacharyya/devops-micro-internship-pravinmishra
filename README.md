@@ -132,7 +132,7 @@ This is not a course. It is an internship-style program — real deployments, re
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7489052200514715648-pTXk/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-00-internet-and-networking-assignment.html) |
 | 01 | Success Mindset | ✅ Completed| ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_shortcuts-dont-save-time-they-move-the-share-7489869144427991040-TpWi/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-01-success-mindset.html) |
-| 02 | Agentic AI with Claude Code | 🔄 In Progress | ✅ Solved | — | — |
+| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7492303222162735104-LwkQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-02-reflection.html) |
 | 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |

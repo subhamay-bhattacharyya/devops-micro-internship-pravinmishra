@@ -46,7 +46,7 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+![Screenshot 1](./screenshots/week-02-agentic-ai-assignment-08-01.png)
 
 ---
 
@@ -54,7 +54,7 @@ Add your screenshot here.
 
 Blog Link:
 
-`Add your URL here`
+[Blog Post](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-02-reflection.html)
 
 ---
 
@@ -92,7 +92,7 @@ Your post must include:
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+![Screenshot 2](./screenshots/week-02-agentic-ai-assignment-08-02.png)
 
 ---
 
@@ -100,15 +100,29 @@ Add your screenshot here.
 
 LinkedIn Post Content (copy-paste here):
 
-```
-Paste your LinkedIn post content here
-```
+DevOps Micro Internship - Week 2 Reflection
+
+I've been a builder for years—code, infrastructure, deployments. But Week 2 of learning agentic AI? That humbled me.
+
+Not because I don't know how to code. Because agentic development requires thinking differently.
+
+I spent hours this week understanding MCPs, building my first Skill, learning when subagents actually make sense. Each felt like a small revelation: "Oh, that's not just a feature—that's the entire paradigm."
+
+My favorite moment? Realizing that Skills aren't about adding power. They're about removing friction. Instead of Claude suggesting tools, a Skill brings tools pre-configured and ready. It changes how you think about problems.
+
+The uncomfortable part: I kept trying to make everything complex because complexity felt sophisticated. It's not. The real skill is knowing when to keep things simple.
+
+Week 3 is about connecting these dots. I'm genuinely excited.
+
+#DMIByPravinMishra #AgenticAI #ClaudeCode #DevOps #LearningInPublic
+
+P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://lnkd.in/g8iGREt2). My graded progress is public: https://dmi.pravinmishra.com/s/subhamay-bhattacharyya.html · Start your DevOps journey: https://lnkd.in/gqmVPaXP
 
 ---
 
 ### LinkedIn Post Link:
 
-`Add your URL here`
+[LinkedIn Post](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7492303222162735104-LwkQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY
 
 ---
 
@@ -124,15 +138,15 @@ Paste your LinkedIn post content here
 
 # Completion Checklist
 
-* [ ] Blog written with required structure
-* [ ] Blog includes at least 2–3 Week 2 topics
-* [ ] Blog is publicly accessible
-* [ ] LinkedIn post created
-* [ ] Required P.S. line included
-* [ ] LinkedIn post content copied in submission field
-* [ ] Blog link added
-* [ ] LinkedIn post link added
-* [ ] Screenshots added to GitHub repo
+* [x] Blog written with required structure
+* [x] Blog includes at least 2–3 Week 2 topics
+* [x] Blog is publicly accessible
+* [x] LinkedIn post created
+* [x] Required P.S. line included
+* [x] LinkedIn post content copied in submission field
+* [x] Blog link added
+* [x] LinkedIn post link added
+* [x] Screenshots added to GitHub repo
 
 ---
 
