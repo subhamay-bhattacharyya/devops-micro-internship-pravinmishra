@@ -101,9 +101,6 @@ Save your diagram image in the `screenshots` folder and update the file name bel
 
 ![Application Architecture Diagram](screenshots/task-3-diagram.png)
 
-
-Replace `task-3-diagram.png` with your actual diagram file name.
-
 ---
 
 ## Technologies Used
