@@ -3,7 +3,7 @@
 ![Cohort](https://img.shields.io/badge/Cohort-self_paced-blue?style=for-the-badge)
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-Pravin_Mishra-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-2%2F14-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-3%2F14-green?style=for-the-badge)
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
 > Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
@@ -71,10 +71,10 @@ This is not a course. It is an internship-style program — real deployments, re
 [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)
 
 <!-- Week 01 → Success Mindset -->
-[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) 
+[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
 
 <!-- Week 02 → Agentic AI with Claude Code -->
-<!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
+[![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/)
 
 <!-- Week 03 → Linux & Bash for DevOps -->
 <!-- [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) -->
@@ -133,7 +133,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7489052200514715648-pTXk/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-00-internet-and-networking-assignment.html) |
 | 01 | Success Mindset | ✅ Completed| ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_shortcuts-dont-save-time-they-move-the-share-7489869144427991040-TpWi/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-01-success-mindset.html) |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7492303222162735104-LwkQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-02-reflection.html) |
-| 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
+| 03 | Linux & Bash for DevOps | 🔄 In Progress | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
