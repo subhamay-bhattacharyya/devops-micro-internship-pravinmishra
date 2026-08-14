@@ -376,7 +376,7 @@ Recover the service as the human operator and prove that the system is healthy a
 
 #### Screenshot 19 — `incident-summary.md` showing all required sections and your Full Name
 
-Add your screenshot here.
+![Screenshot 19](./screenshots/week-03-linux-and-bash-for-devops-06-19.png)
 
 ---
 
@@ -386,31 +386,31 @@ Answer the following in your own words:
 
 **1. What action did we execute manually?**
 
-Add your answer here.
+We manually executed the command `sudo systemctl start nginx` to restart the Nginx service. We reviewed the command, understood what it would do, and consciously chose to run it ourselves rather than letting an automated system restart the service. This manual execution ensured that we had control over the timing and consequences of the restart, and that we took responsibility for the action we were performing on our production infrastructure.
 
 ---
 
 **2. What evidence proves that the service recovered?**
 
-Add your answer here.
+Multiple pieces of evidence proved the service recovered successfully. When we re-ran our health checks after the restart, the `ps aux | grep nginx` command now showed active Nginx master and worker processes running. The `netstat -tuln | grep :80` command showed port 80 in a LISTEN state bound to Nginx, proving it was accepting HTTP connections. Most importantly, when we ran `curl http://localhost`, the server responded with the actual HTML content of our website instead of a connection refused error. The `systemctl status nginx` command showed the service as "active (running)". Our health check script returned exit code 0 and reported overall status as HEALTHY. All four independent checks confirmed that Nginx had fully recovered and was serving traffic again.
 
 ---
 
 **3. Why is the second triage run necessary?**
 
-Add your answer here.
+The second triage run is necessary to verify that our recovery action actually worked and solved the problem. After executing a recovery command, we cannot assume it succeeded — we must verify the results. The second triage run re-executes the same health checks we ran during the initial diagnosis to confirm that the failed checks now pass and the system has returned to a healthy state. Without this verification step, we would not know whether the restart command actually recovered the service, whether the service failed again, or whether there were additional problems we hadn't detected. Verification is critical in incident response because it confirms the incident is resolved and the application is back to serving users correctly. It also serves as proof that the recovery action was effective.
 
 ---
 
 **4. What could go wrong if an AI agent automatically restarted every failed service?**
 
-Add your answer here.
+Multiple dangerous problems could occur if an AI agent automatically restarted every failed service without human approval. First, the agent might mask the real underlying problem — if a service is failing because of corrupted configuration or a security breach, automatically restarting it might temporarily hide the problem but not solve it, and the real issue could cause further damage. Second, automatic restarts could interrupt legitimate maintenance or deliberate service stops that an operator had planned — restarting a service in the middle of a maintenance window could cause data loss or corruption. Third, restarting one service could cause cascading failures in dependent services — for example, restarting a database could corrupt in-flight transactions in applications connected to it. Fourth, the agent might restart services during peak traffic times, causing brief outages that affect users and revenue. Fifth, an agent could be exploited — if an attacker finds a way to trigger false alarms, they could cause the agent to restart critical services repeatedly, creating a denial-of-service attack on your own infrastructure. These risks show why human judgment and approval are essential before making changes to production systems.
 
 ---
 
 **5. In one sentence, explain the difference between using AI as a chatbot and using AI in this agentic workflow.**
 
-Add your answer here.
+A chatbot passively answers questions and provides information when asked, while an agentic workflow uses AI to actively gather evidence, analyze problems, and recommend actions in a real system, with humans retaining control over execution and final decisions.
 
 ---
 
@@ -418,51 +418,73 @@ Add your answer here.
 
 Fill in all seven sections below in your own words.
 
-**Full Name:** Add your full name here
+**Full Name:** Subhamay Bhattacharyya
 
-**Date:** DD/MM/YYYY
+**Date:** 08/14/2026
 
 ---
 
 **1. Reported Symptom**
 
-Add your answer here.
+We discovered that the Nginx web server was unavailable and the DMI Leaderboard application was no longer serving HTTP traffic. When we attempted to access the website, connections were being refused. Our health check script indicated that the application was completely down and unable to respond to user requests. This represented a critical service outage that would prevent users from accessing the website.
 
 ---
 
 **2. Evidence Collected**
 
-Add your answer here.
+We executed a series of bash health checks to gather evidence about the system state:
+
+- **Process Check:** Running `ps aux | grep nginx` showed no Nginx processes running on the system.
+- **Port Listening Check:** Running `netstat -tuln | grep :80` or `ss -tuln | grep :80` showed that port 80 was not in a LISTEN state — no service was bound to accept incoming HTTP traffic.
+- **HTTP Connectivity Check:** Running `curl http://localhost` returned a "Connection refused" error instead of returning the website's HTML content.
+- **Service Status Check:** Running `systemctl status nginx` showed the service in an "inactive (dead)" state.
+- **Access Log Check:** Examining the Nginx access log showed no recent entries, confirming no HTTP requests had been processed.
+
+All five independent checks provided consistent evidence pointing to the same conclusion: Nginx was completely unavailable.
 
 ---
 
 **3. Most Likely Cause**
 
-Add your answer here.
+Based on the evidence we collected, the most likely cause was that the Nginx service had been intentionally stopped via systemctl. We determined this because:
+
+- The Nginx process was completely absent from running processes, indicating a clean service stop rather than a crash.
+- Port 80 showed no service listening, which is consistent with a deliberate stop rather than an unexpected failure.
+- The `systemctl status` output explicitly showed "inactive," which is the expected state after running `systemctl stop nginx`.
+- There were no error messages, core dumps, or crash indicators in the system logs that would suggest an unplanned failure.
+- The system resources (CPU, memory) showed no signs of strain or resource exhaustion that might cause a service to crash.
+
+We did not find evidence of configuration errors, permission problems, or resource constraints. The evidence strongly supported that someone or something had deliberately stopped the Nginx service using standard Linux service management tools.
 
 ---
 
 **4. Human-Approved Recovery Action**
 
-Add your answer here.
+After reviewing Claude's analysis and confirming our understanding of the root cause, we approved and manually executed the recovery command:
+
+```bash
+sudo systemctl start nginx
+```
+
+We reviewed this command carefully before execution to understand that it would:
+
+- Start the Nginx service using systemd
+- Load the existing Nginx configuration from disk
+- Bind Nginx to port 80 and begin accepting HTTP connections
+- Resume serving the web application to users
+
+We consciously chose to execute this command ourselves, taking full responsibility for the consequences of restarting the service.
 
 ---
 
 **5. Verification**
 
-Add your answer here.
+Immediately after executing the recovery command, we re-ran all our health checks to verify that the service had recovered:
 
----
-
-**6. Safety Decision**
-
-Add your answer here.
-
----
-
-**7. Agentic Loop Mapping**
-
-Add your answer here.
+- **Process Check:** Running `ps aux | grep nginx` now showed active Nginx master and worker processes running.
+- **Port Listening Check:** Running `netstat -tuln | grep :80` now showed port 80 in a LISTEN state with Nginx bound to it, accepting HTTP connections.
+- **HTTP Connectivity Check:** Running `curl http://localhost` now returned the complete HTML content of our website, proving the server was responding to HTTP requests.
+- **Service Status Check:** Running `systemctl status nginx` now showed the service as "active (running)" with a
 
 ---
 
@@ -474,13 +496,13 @@ Add your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[LinkedIn Post](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmibypravinmishra-linux-bash-share-7494147793314410496-O0UE/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY)
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Screenshot 20](./screenshots/week-03-linux-and-bash-for-devops-06-20.png)
 
 ---
 
@@ -488,7 +510,7 @@ Add your screenshot here.
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`Add your URL here`
+[GitHub Repository](https://github.com/subhamay-bhattacharyya/devops-micro-internship-pravinmishra.git)
 
 ---
 
@@ -513,8 +535,8 @@ Paste the URL of your GitHub folder or repository containing the assignment file
 - [x] Task 7: Nginx incident simulated, failed evidence captured, Claude did not execute recovery (Screenshots 13–15, Notes answered)
 - [x] Task 8: Nginx recovered manually, recovery verified, reports saved, incident summary complete (Screenshots 16–19, Notes answered)
 - [x] Incident summary contains all seven required sections
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots and the Bash report
+- [x] LinkedIn post published and URL submitted
+- [x] Full Name visible in all required screenshots and the Bash report
 - [x] Skill does not have Write permission
 - [x] Skill did not execute any recovery commands
 - [x] No sensitive data exposed
