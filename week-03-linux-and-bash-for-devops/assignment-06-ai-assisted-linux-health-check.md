@@ -266,25 +266,25 @@ Answer the following in your own words:
 
 **1. Why does this skill have Bash, Read, and Grep, but not Write?**
 
-Add your answer here.
+This skill is designed as a read-only diagnostic and monitoring tool, not a modification or remediation tool. Bash, Read, and Grep allow you to gather information, execute health checks, and search through system output to understand the current state of your infrastructure. By excluding Write permissions, the skill cannot make changes to the system — it cannot modify configuration files, restart services, or alter system state. This is a safety measure that keeps the skill focused on its purpose: gathering evidence and analyzing the health of your system without risk of accidentally changing something or causing unintended side effects. In DevOps, read-only diagnostic tools are safer for investigation and analysis; modification and remediation are separate, controlled operations that require explicit human approval and execution.
 
 ---
 
 **2. Why is `disable-model-invocation: true` useful for this skill?**
 
-Add your answer here.
+The `disable-model-invocation: true` configuration prevents Claude from making automatic API calls or invoking other AI models during the health check process. This keeps the health check deterministic, fast, and focused on gathering and analyzing local system evidence. Without this setting, Claude might attempt to call external APIs or services for additional information, which could introduce latency, dependencies, or unexpected behavior. Disabling model invocation ensures the health check is self-contained and uses only the evidence gathered from bash commands, logs, and system state. This makes the skill more reliable and predictable — you get results based purely on your system's actual state, not external interpretations or API responses. It also keeps the skill efficient; there's no waiting for external calls, so health checks execute quickly.
 
 ---
 
 **3. What part is performed by Bash, and what part is performed by Claude?**
 
-Add your answer here.
+Bash performs the evidence gathering and command execution. Bash commands like `systemctl status nginx`, `netstat -tuln`, `curl http://localhost`, and `ps aux | grep nginx` run directly on the system and return raw output showing the actual state of services, ports, processes, and network activity. These commands are deterministic — they always return factual information about the system's current state. Claude performs the analysis and interpretation. Claude reads the bash command output and evidence, evaluates whether conditions meet HEALTHY, WARN, or FAIL criteria, and makes conclusions about the system's health status. Claude reasons about what the evidence means — if port 80 is listening and curl returns content, Claude concludes the server is serving traffic. Bash is the evidence collector; Claude is the analyst.
 
 ---
 
 **4. Why is this better than asking Claude "Is my server healthy?" without giving it evidence?**
 
-Add your answer here.
+Asking Claude "Is my server healthy?" without evidence would be speculative and unreliable. Claude would have no factual information about your system and could only make general guesses based on training data, which might not apply to your specific infrastructure. The answer would be unsupported and potentially misleading. By providing actual evidence from your system — bash command output, log files, system metrics — you're giving Claude concrete facts to analyze. Claude can only make evidence-based conclusions about your specific server's actual state. This approach is grounded in reality rather than speculation. In incident response and DevOps, evidence-based diagnosis is essential — you need facts about what's actually broken, not guesses. Combining bash's ability to gather local system evidence with Claude's ability to analyze and interpret that evidence creates a reliable diagnostic tool that works for your specific infrastructure.
 
 ---
 
