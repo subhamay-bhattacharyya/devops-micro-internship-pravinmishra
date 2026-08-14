@@ -494,13 +494,13 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-![Screenshot 19](./screenshots/week-03-linux-and-bash-for-devops-03-20.png)
+![Screenshot 19](./screenshots/week-03-linux-and-bash-for-devops-03-19.png)
 
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-![Screenshot 21](./screenshots/week-03-linux-and-bash-for-devops-03-21.png)
+![Screenshot 20](./screenshots/week-03-linux-and-bash-for-devops-03-20.png)
 
 ---
 
@@ -510,19 +510,27 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-Write your answer here.
+The source code lived in `~/my-react-app/src/` but you searched in `/var/www/html/`, which only contains minified production builds. Grep found "Deployed by" but displayed it as garbled minified code with literal `\n` characters.
 
 ---
 
 **2. How did you fix the issue?**
 
-Write your answer here.
+Search the source code directory instead of the deployment directory:
+
+```bash
+grep -R "Deployed by" ~/my-react-app/src -n
+```
 
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
 
-Write your answer here.
+- Use Git to version control source code separately from deployments
+- Implement CI/CD to track which commit produced which deployment
+- Use environment variables instead of hardcoding deployment info
+- Keep clear documentation of where source code and built artifacts live
+- Maintain deployment logs tracking who deployed what and when
 
 ---
 
@@ -536,13 +544,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
+![Screenshot 21](./screenshots/week-03-linux-and-bash-for-devops-03-21.png)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![Screenshot 22](./screenshots/week-03-linux-and-bash-for-devops-03-22.png)
 
 ---
 
@@ -552,19 +560,26 @@ Answer the following in your own words:
 
 **1. What caused the application to break in this scenario?**
 
-Write your answer here
+Deleting the `/var/www/html` directory removed the entire production deployment, taking down the React application. Without the compiled files, static assets, and index.html, the web server had nothing to serve to users.
 
 ---
 
 **2. How did you fix the issue and restore the application?**
 
-Write your answer here.
+You restored the `/var/www/html` directory from a backup, which recovered all the compiled React bundles, assets, and configuration files. This brought the application back online immediately without needing to rebuild or redeploy from source.
 
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
-Write your answer here.
+- **Implement automated backups** — Daily/hourly backups with versioning
+- **Use infrastructure-as-code** — Terraform/CloudFormation to quickly redeploy if needed
+- **Set directory permissions** — Restrict write access to `/var/www` (prevent accidental deletion)
+- **Enable audit logging** — Log all file deletions to detect accidents
+- **Use container deployments** — Docker/Kubernetes make redeployment faster than restoring backups
+- **Automated testing & CI/CD** — Catch issues before they reach production
+- **Disaster recovery plan** — Document RTO/RPO and test recovery procedures regularly
+- **Read-only filesystems** — Use immutable deployments where possible
 
 ---
 
@@ -580,31 +595,31 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
+SSH keys use public-key cryptography where only the private key (kept secret) can decrypt the public key's challenge. Passwords can be brute-forced, intercepted, or guessed. Keys are mathematically stronger, cannot be reused by attackers if compromised, and don't require transmitting secrets over the network.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
+Every open port is a potential attack surface. Unnecessary open ports increase the risk of unauthorized access, exploitation of unknown vulnerabilities, and lateral movement by attackers. Following the principle of least privilege minimizes the attack surface and limits what an attacker can target.
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
+Enabling Nginx to auto-start on boot ensures the web application automatically comes back online after server restarts (planned maintenance or unexpected crashes). Without this, manual intervention is needed after every reboot, causing downtime and service disruption.
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
+Publicly shared credentials allow anyone to impersonate you, access your cloud resources, steal data, deploy malicious code, incur unexpected costs, or use your infrastructure for attacks. Leaked keys/passwords are extremely difficult to revoke completely and compromise your entire system's security.
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
+Running unused cloud resources (EC2, databases, storage) continuously incurs charges even if not in use. Terminating them reduces infrastructure costs, minimizes the attack surface, and prevents orphaned resources from becoming security liabilities or compliance risks.
 
 ---
 
@@ -616,13 +631,13 @@ Write your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[LinkedIn Post](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmibypravinmishra-ugcPost-7493847843539968000-7jd8/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY)
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Screenshot 23](./screenshots/week-03-linux-and-bash-for-devops-03-23.png)
 
 ---
 
