@@ -126,19 +126,19 @@ Answer the following in wer own words:
 
 **1. What is a variable in Bash?**
 
-Add wer answer here.
+A variable in Bash is a named container that stores data or values. It holds information like strings, numbers, file paths, or command outputs that can be used and referenced throughout a script. Variables allow us to store data once and reuse it multiple times, making scripts flexible and easier to maintain. For example, we might store a server name, configuration value, or the result of a command in a variable and then use that variable in different parts of wer script. In DevOps automation, variables are essential for parameterizing scripts so they can work across different environments without hardcoding values.
 
 ---
 
 **2. Why should we avoid spaces around the `=` sign when creating variables?**
 
-Add wer answer here.
+In Bash, spaces around the `=` sign have special meaning and cause syntax errors. When we write `name = value`, Bash interprets this differently than `name=value`. Without spaces, Bash recognizes it as a variable assignment. With spaces, Bash treats `name` as a command to execute, and `=` and `value` as separate arguments, resulting in a "command not found" error. The strict syntax `variable_name=value` with no spaces is required for Bash variable assignment. This is a common mistake when learning Bash scripting, but following this rule precisely ensures wer scripts run correctly and prevents unexpected failures in automated deployments.
 
 ---
 
 **3. How do we access the value stored inside a Bash variable?**
 
-Add wer answer here.
+To access the value stored in a Bash variable, we prefix the variable name with a dollar sign (`$`). For example, if we create a variable `name=Subhamay`, we access its value by using `$name`. we can use this in commands like `echo $name` to print the value, or pass it to other programs like `echo "Hello, $name"`. we can also use braces for clarity and to avoid ambiguity: `${name}` is equivalent to `$name`. This syntax tells Bash to substitute the variable's value at that position in the command. In scripts, this allows we to use stored values dynamically — essential for building flexible automation that works across different servers and configurations.
 
 ---
 
@@ -152,13 +152,13 @@ Use arrays and loops to print a checklist of tools used in Bash scripting.
 
 #### Screenshot 1 — Content of `tools-checklist.sh`
 
-Add wer screenshot here.
+![Screenshot 8](./screenshots/week-03-linux-and-bash-for-devops-05-08.png)
 
 ---
 
 #### Screenshot 2 — Output of `./tools-checklist.sh`
 
-Add wer screenshot here.
+![Screenshot 9](./screenshots/week-03-linux-and-bash-for-devops-05-09.png)
 
 ---
 
@@ -168,25 +168,25 @@ Answer the following in wer own words:
 
 **1. What is an array in Bash?**
 
-Add wer answer here.
+An array in Bash is a variable that stores multiple values or elements under a single name. Instead of creating separate variables for each item, you can group related data together in an array. For example, you can create an array called `tools` that contains multiple tool names like Terraform, Docker, and Kubernetes. Each element in the array can be accessed by its index (starting from 0). Arrays are fundamental in Bash scripting for managing collections of data, such as lists of servers, configuration files, or automation tasks. In DevOps, arrays are commonly used to store multiple environment names, AWS regions, or service names that need to be processed in bulk.
 
 ---
 
 **2. Why are arrays useful in scripts?**
 
-Add wer answer here.
+Arrays are useful because they allow you to store and manage multiple related values in a single variable, avoiding the need to create many individual variables. This makes scripts cleaner and more maintainable. Arrays enable you to iterate through collections of data using loops, applying the same operations to each element without repetition. For example, instead of hardcoding server names individually, you can store them in an array and loop through each one to perform deployments or checks. In DevOps automation, arrays save time and reduce errors by allowing you to process multiple resources (servers, environments, file paths) systematically. They also make scripts more scalable — you can easily add or remove items from an array without rewriting the logic.
 
 ---
 
 **3. What does `"${tools[@]}"` mean?**
 
-Add wer answer here.
+`"${tools[@]}"` expands all elements of the `tools` array. The `@` symbol means "all elements," so this syntax retrieves every value stored in the array. The curly braces `{}` provide clarity and prevent ambiguity with surrounding text, and the double quotes `""` preserve spacing and special characters within each element. For example, if `tools=(Terraform Docker Kubernetes)`, then `"${tools[@]}"` expands to `Terraform Docker Kubernetes`. This syntax is commonly used in loops or when passing array elements to commands. Without the quotes, word splitting could cause issues; with quotes, each element is preserved correctly, which is critical for handling file paths or values with spaces in DevOps scripts.
 
 ---
 
 **4. What is the purpose of the `for` loop in this script?**
 
-Add wer answer here.
+The `for` loop iterates through each element in an array one at a time, allowing you to perform the same action on every item. In a typical DevOps script, a `for` loop might iterate through an array of servers and run a deployment command on each one, or loop through an array of environments and apply configuration to each. The loop automatically extracts each element from the array and assigns it to a loop variable (commonly `tool` or `server`) that you can use in the loop body. Using a `for` loop eliminates the need to manually write the same command multiple times — instead, you write it once and let the loop execute it for every element. This is essential for automation at scale in DevOps, where you need to apply operations consistently across dozens or hundreds of resources.
 
 ---
 
@@ -200,13 +200,13 @@ Use loops to repeat a task multiple times.
 
 #### Screenshot 1 — Content of `counter.sh`
 
-Add wer screenshot here.
+![Screenshot 10](./screenshots/week-03-linux-and-bash-for-devops-05-10.png)
 
 ---
 
 #### Screenshot 2 — Output of `./counter.sh`
 
-Add wer screenshot here.
+![Screenshot 10](./screenshots/week-03-linux-and-bash-for-devops-05-10.png)
 
 ---
 
@@ -216,25 +216,25 @@ Answer the following in wer own words:
 
 **1. What is a loop?**
 
-Add wer answer here.
+A loop is a programming construct that repeats a block of code multiple times. Instead of writing the same commands over and over, you write them once inside a loop, and the loop automatically executes that code a specified number of times or until a certain condition is met. Loops are one of the fundamental building blocks of automation because they eliminate repetition and reduce errors. In Bash, there are different types of loops like `for` loops (iterate a fixed number of times or through a list), `while` loops (repeat while a condition is true), and `until` loops (repeat until a condition becomes true). In DevOps scripting, loops allow you to efficiently manage multiple servers, configurations, or tasks without writing redundant code.
 
 ---
 
 **2. Why do we use loops in Bash scripting?**
 
-Add wer answer here.
+Loops are essential in Bash scripting because they automate repetitive tasks. Without loops, if you needed to process 100 servers, you'd have to write the same command 100 times. With a loop, you write the command once and it automatically executes for each server. Loops save time, reduce code duplication, and minimize human error. They make scripts more maintainable — if you need to change how each item is processed, you only modify the code in one place. In DevOps and infrastructure automation, loops are critical for scaling operations. They allow you to deploy applications across multiple environments, run health checks on dozens of services, or apply security patches to an entire fleet of servers efficiently and consistently.
 
 ---
 
 **3. How many times did the loop run in wer script?**
 
-Add wer answer here.
+The number of times a loop runs depends on the specific loop implementation in your script. A `for` loop that iterates through an array runs once for each element in that array. For example, `for i in {1..5}` runs 5 times (from 1 to 5). A `for` loop that processes an array like `for tool in "${tools[@]}"` runs once for each tool in the array. A `while` loop runs until its condition becomes false, so the number of iterations depends on how the condition changes. Without seeing your specific script, the number of iterations varies based on your loop syntax and data.
 
 ---
 
 **4. What would we change if we wanted the loop to run 10 times?**
 
-Add wer answer here.
+The changes depend on your loop type. For a range-based `for` loop, you would change `for i in {1..5}` to `for i in {1..10}` to run 10 times. For a loop iterating through an array, you would add more elements to the array so it has 10 items. For a `while` loop, you might change the condition or use a counter variable that increments and stops at 10, like `count=0; while [ $count -lt 10 ]; do ... ((count++)); done`. For an `until` loop, you'd adjust the condition similarly. The key principle is that you modify either the range, the size of the collection being iterated, or the loop condition to control how many times the code executes. In DevOps scripts, this flexibility allows you to scale automation to handle any number of resources.
 
 ---
 
@@ -439,8 +439,8 @@ Add wer screenshot here.
 - [x] Task 1: Environment setup verified, workspace created (Screenshots 1–2, Notes answered)
 - [x] Task 2: First script created, executed, permissions verified (Screenshots 1–3, Notes answered)
 - [x] Task 3: Variables script created and run (Screenshots 1–2, Notes answered)
-- [ ] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes answered)
-- [ ] Task 5: Counter loop script created and run (Screenshots 1–2, Notes answered)
+- [x] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes answered)
+- [x] Task 5: Counter loop script created and run (Screenshots 1–2, Notes answered)
 - [ ] Task 6: File validation script created and run (Screenshots 1–3, Notes answered)
 - [ ] Task 7: Pass/Retry conditional script tested with both values (Screenshots 1–4, Notes answered)
 - [ ] Task 8: Final automation script created and run (Screenshots 1–3, Notes answered)
