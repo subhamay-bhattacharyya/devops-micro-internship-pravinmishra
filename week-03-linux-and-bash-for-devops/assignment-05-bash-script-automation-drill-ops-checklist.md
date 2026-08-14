@@ -436,9 +436,9 @@ Add wer screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Environment setup verified, workspace created (Screenshots 1–2, Notes answered)
-- [ ] Task 2: First script created, executed, permissions verified (Screenshots 1–3, Notes answered)
-- [ ] Task 3: Variables script created and run (Screenshots 1–2, Notes answered)
+- [x] Task 1: Environment setup verified, workspace created (Screenshots 1–2, Notes answered)
+- [x] Task 2: First script created, executed, permissions verified (Screenshots 1–3, Notes answered)
+- [x] Task 3: Variables script created and run (Screenshots 1–2, Notes answered)
 - [ ] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes answered)
 - [ ] Task 5: Counter loop script created and run (Screenshots 1–2, Notes answered)
 - [ ] Task 6: File validation script created and run (Screenshots 1–3, Notes answered)
