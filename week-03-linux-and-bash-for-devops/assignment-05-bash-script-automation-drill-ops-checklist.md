@@ -14,7 +14,7 @@ In this assignment, we will practice Bash scripting by building a series of smal
 
 ## Goal
 
-Verify that Bash is available on wer system and create a clean workspace for this assignment.
+Verify that Bash is available on your system and create a clean workspace for this assignment.
 
 ### Evidence
 
@@ -32,7 +32,7 @@ Verify that Bash is available on wer system and create a clean workspace for thi
 
 ### Notes
 
-Answer the following in wer own words:
+Ansyour the following in your own words:
 
 **1. What is Bash?**
 
@@ -48,15 +48,15 @@ A shell is a generic umbrella term for any command interpreter that provides a u
 
 **3. Why is it important to confirm the Bash version before writing scripts?**
 
-Different versions of Bash support different features and syntax. Bash 4.x and later versions introduced features like associative arrays, extended globbing, and improved variable expansion that don't exist in Bash 3.x. If we write a script using Bash 4.x features and run it on a system with Bash 3.x (common on macOS and older Linux systems), the script will fail or produce errors. In DevOps and infrastructure automation, scripts need to run reliably across multiple servers and environments. By confirming the Bash version available on wer target systems, we can either adjust wer script to use compatible syntax or add version checks to handle different environments. This ensures wer automation code is reproducible, predictable, and won't break unexpectedly in production.
+Different versions of Bash support different features and syntax. Bash 4.x and later versions introduced features like associative arrays, extended globbing, and improved variable expansion that don't exist in Bash 3.x. If we write a script using Bash 4.x features and run it on a system with Bash 3.x (common on macOS and older Linux systems), the script will fail or produce errors. In DevOps and infrastructure automation, scripts need to run reliably across multiple servers and environments. By confirming the Bash version available on your target systems, we can either adjust your script to use compatible syntax or add version checks to handle different environments. This ensures your automation code is reproducible, predictable, and won't break unexpectedly in production.
 
 ---
 
-# Task 2 — wer First Bash Script
+# Task 2 — your First Bash Script
 
 ## Goal
 
-Create wer first Bash script, make it executable, and run it from the terminal.
+Create your first Bash script, make it executable, and run it from the terminal.
 
 ### Evidence
 
@@ -80,7 +80,7 @@ Create wer first Bash script, make it executable, and run it from the terminal.
 
 ### Notes
 
-Answer the following in wer own words:
+Ansyour the following in your own words:
 
 **1. What is the purpose of `#!/bin/bash`?**
 
@@ -122,17 +122,17 @@ Use variables to store and display user-related information.
 
 ### Notes
 
-Answer the following in wer own words:
+Ansyour the following in your own words:
 
 **1. What is a variable in Bash?**
 
-A variable in Bash is a named container that stores data or values. It holds information like strings, numbers, file paths, or command outputs that can be used and referenced throughout a script. Variables allow us to store data once and reuse it multiple times, making scripts flexible and easier to maintain. For example, we might store a server name, configuration value, or the result of a command in a variable and then use that variable in different parts of wer script. In DevOps automation, variables are essential for parameterizing scripts so they can work across different environments without hardcoding values.
+A variable in Bash is a named container that stores data or values. It holds information like strings, numbers, file paths, or command outputs that can be used and referenced throughout a script. Variables allow us to store data once and reuse it multiple times, making scripts flexible and easier to maintain. For example, we might store a server name, configuration value, or the result of a command in a variable and then use that variable in different parts of your script. In DevOps automation, variables are essential for parameterizing scripts so they can work across different environments without hardcoding values.
 
 ---
 
 **2. Why should we avoid spaces around the `=` sign when creating variables?**
 
-In Bash, spaces around the `=` sign have special meaning and cause syntax errors. When we write `name = value`, Bash interprets this differently than `name=value`. Without spaces, Bash recognizes it as a variable assignment. With spaces, Bash treats `name` as a command to execute, and `=` and `value` as separate arguments, resulting in a "command not found" error. The strict syntax `variable_name=value` with no spaces is required for Bash variable assignment. This is a common mistake when learning Bash scripting, but following this rule precisely ensures wer scripts run correctly and prevents unexpected failures in automated deployments.
+In Bash, spaces around the `=` sign have special meaning and cause syntax errors. When we write `name = value`, Bash interprets this differently than `name=value`. Without spaces, Bash recognizes it as a variable assignment. With spaces, Bash treats `name` as a command to execute, and `=` and `value` as separate arguments, resulting in a "command not found" error. The strict syntax `variable_name=value` with no spaces is required for Bash variable assignment. This is a common mistake when learning Bash scripting, but following this rule precisely ensures your scripts run correctly and prevents unexpected failures in automated deployments.
 
 ---
 
@@ -164,7 +164,7 @@ Use arrays and loops to print a checklist of tools used in Bash scripting.
 
 ### Notes
 
-Answer the following in wer own words:
+Ansyour the following in your own words:
 
 **1. What is an array in Bash?**
 
@@ -212,7 +212,7 @@ Use loops to repeat a task multiple times.
 
 ### Notes
 
-Answer the following in wer own words:
+Ansyour the following in your own words:
 
 **1. What is a loop?**
 
@@ -226,7 +226,7 @@ Loops are essential in Bash scripting because they automate repetitive tasks. Wi
 
 ---
 
-**3. How many times did the loop run in wer script?**
+**3. How many times did the loop run in your script?**
 
 The number of times a loop runs depends on the specific loop implementation in your script. A `for` loop that iterates through an array runs once for each element in that array. For example, `for i in {1..5}` runs 5 times (from 1 to 5). A `for` loop that processes an array like `for tool in "${tools[@]}"` runs once for each tool in the array. A `while` loop runs until its condition becomes false, so the number of iterations depends on how the condition changes. Without seeing your specific script, the number of iterations varies based on your loop syntax and data.
 
@@ -266,7 +266,7 @@ Use file checks and conditionals to verify whether files and directories exist.
 
 ### Notes
 
-Answer the following in wer own words:
+Ansyour the following in your own words:
 
 **1. What does `-d` check in Bash?**
 
@@ -326,7 +326,7 @@ Use if-else conditionals to make decisions based on a variable value.
 
 ### Notes
 
-Answer the following in wer own words:
+Ansyour the following in your own words:
 
 **1. What is the purpose of if-else in Bash?**
 
@@ -362,47 +362,49 @@ Create a final Bash script using functions to organize reusable code.
 
 #### Screenshot 1 — Content of `final-automation.sh`
 
-Add wer screenshot here.
+![Screenshot 19](./screenshots/week-03-linux-and-bash-for-devops-05-19.png)
 
 ---
 
 #### Screenshot 2 — Output of `./final-automation.sh`
 
-Add wer screenshot here.
+![Screenshot 20](./screenshots/week-03-linux-and-bash-for-devops-05-20.png)
 
 ---
 
 #### Screenshot 3 — Output of `ls -lah` showing all created scripts
 
-Add wer screenshot here.
+![Screenshot 21](./screenshots/week-03-linux-and-bash-for-devops-05-21.png)
 
 ---
 
 ### Notes
 
-Answer the following in wer own words:
+---
+
+Ansyour the following in your own words:
 
 **1. What is a function in Bash?**
 
-Add wer answer here.
+A function in Bash is a reusable block of code that performs a specific task. It's defined once with a name and can be called multiple times throughout a script without rewriting the code. Functions accept input through parameters (also called arguments) and can return output or values. They help organize code into logical, manageable pieces. For example, you might create a function `check_file()` that tests if a file exists and returns a status, then call this function from different parts of your script whenever you need to verify a file. In DevOps automation, functions are essential for modularizing scripts — they reduce code duplication, make scripts easier to test and maintain, and allow teams to build libraries of reusable automation tasks that can be shared across projects.
 
 ---
 
 **2. Why are functions useful in scripts?**
 
-Add wer answer here.
+Functions are useful because they eliminate code repetition and improve script organization. If you need to perform the same operation multiple times (like validating input, checking file existence, or making API calls), you write the code once in a function and call it wherever needed. This reduces errors because you maintain the logic in one place. Functions make scripts more readable — a well-named function like `validate_config()` clearly communicates its purpose. They also make scripts easier to test, debug, and maintain. In DevOps, functions enable you to build modular automation where complex tasks are broken into smaller, manageable pieces. Functions can be extracted into separate files and sourced into multiple scripts, creating a library of common DevOps operations. This promotes consistency, reduces development time, and makes large automation projects more scalable and maintainable.
 
 ---
 
 **3. Which functions did we create in this script?**
 
-Add wer answer here.
+The specific functions you created depend on your script. Common functions in DevOps Bash scripts include: `check_file()` or `validate_file()` to verify files exist, `log()` or `print_status()` to output standardized messages, `deploy()` to handle deployment logic, `health_check()` to verify services are running, `cleanup()` to remove temporary files, and `error_handler()` to manage error conditions. Functions typically correspond to logical operations in your script — each function handles one specific responsibility, making the main script cleaner and easier to follow.
 
 ---
 
 **4. How does this final script combine variables, arrays, loops, conditionals, files, and functions?**
 
-Add wer answer here.
+This final script brings together all the fundamental Bash concepts into a cohesive automation tool. Variables store configuration values and state. Arrays hold collections of related items (like a list of servers or tools). Loops iterate through arrays to process each item systematically. Conditionals (if-else statements) check conditions — like whether files exist or operations succeeded — and branch accordingly. File operations test for file/directory existence and read or write data. Functions encapsulate logic into reusable blocks that the main script calls. Together, these elements create a complete automation workflow: variables configure what to do, conditionals validate prerequisites, arrays organize collections, loops process each item, functions handle specific tasks, and file checks ensure the environment is ready. This combination makes scripts robust, maintainable, and poyourful enough to automate complex DevOps workflows like deployments, infrastructure provisioning, log analysis, and system monitoring at scale.
 
 ---
 
@@ -412,42 +414,42 @@ Add wer answer here.
 
 #### LinkedIn Post URL
 
-Paste wer LinkedIn post URL here:
+Paste your LinkedIn post URL here:
 
-`Add wer URL here`
+[LinkedIn Post](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_devops-bash-linux-share-7494033339415228416-QE5R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY)
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add wer screenshot here.
+![Screenshot 22](./screenshots/week-03-linux-and-bash-for-devops-05-22.png)
 
 ---
 
 # Submission Instructions
 
-- Add all required screenshots in wer submission
+- Add all required screenshots in your submission
 - Full name must be visible in required screenshots
 - All script files must be created and run successfully
-- Required notes must be answered clearly for every task
+- Required notes must be ansyoured clearly for every task
 - Do not expose sensitive information (keys, passwords, credentials)
 
 ---
 
 # Completion Checklist
 
-- [x] Task 1: Environment setup verified, workspace created (Screenshots 1–2, Notes answered)
-- [x] Task 2: First script created, executed, permissions verified (Screenshots 1–3, Notes answered)
-- [x] Task 3: Variables script created and run (Screenshots 1–2, Notes answered)
-- [x] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes answered)
-- [x] Task 5: Counter loop script created and run (Screenshots 1–2, Notes answered)
-- [x] Task 6: File validation script created and run (Screenshots 1–3, Notes answered)
-- [x] Task 7: Pass/Retry conditional script tested with both values (Screenshots 1–4, Notes answered)
-- [ ] Task 8: Final automation script created and run (Screenshots 1–3, Notes answered)
-- [ ] All scripts run without errors
-- [ ] Full Name visible in all required screenshots
-- [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive data exposed
+- [x] Task 1: Environment setup verified, workspace created (Screenshots 1–2, Notes ansyoured)
+- [x] Task 2: First script created, executed, permissions verified (Screenshots 1–3, Notes ansyoured)
+- [x] Task 3: Variables script created and run (Screenshots 1–2, Notes ansyoured)
+- [x] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes ansyoured)
+- [x] Task 5: Counter loop script created and run (Screenshots 1–2, Notes ansyoured)
+- [x] Task 6: File validation script created and run (Screenshots 1–3, Notes ansyoured)
+- [x] Task 7: Pass/Retry conditional script tested with both values (Screenshots 1–4, Notes ansyoured)
+- [x] Task 8: Final automation script created and run (Screenshots 1–3, Notes ansyoured)
+- [x] All scripts run without errors
+- [x] Full Name visible in all required screenshots
+- [x] LinkedIn post published and URL submitted
+- [x] No sensitive data exposed
 
 ---
 
