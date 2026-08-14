@@ -6,7 +6,7 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Purpose
 
-In this assignment, we will build a read-only Bash triage script that checks the health of wer Ubuntu server and Nginx application, connect it to Claude Code as a reusable `/linux-triage` skill, simulate a controlled Nginx incident, use the skill to gather and analyze evidence, recover the service manually, and verify recovery. The workflow follows the Agentic Loop: Gather → Analyze → Human Act → Verify.
+In this assignment, we will build a read-only Bash triage script that checks the health of your Ubuntu server and Nginx application, connect it to Claude Code as a reusable `/linux-triage` skill, simulate a controlled Nginx incident, use the skill to gather and analyze evidence, recover the service manually, and verify recovery. The workflow follows the Agentic Loop: Gather → Analyze → Human Act → Verify.
 
 ---
 
@@ -32,11 +32,11 @@ Confirm that Nginx and the React application are healthy before building the aut
 
 ### Notes
 
-Answer the following in wer own words:
+Answer the following in your own words:
 
 **1. What proves that Nginx is running?**
 
-Several indicators prove that Nginx is running. First, we can check the process status using commands like `systemctl status nginx` or `ps aux | grep nginx` to see if the Nginx process is active in the system. We can also verify that Nginx is listening on port 80 using `netstat -tuln | grep :80` or `ss -tuln | grep :80`, which should show the Nginx process in a LISTEN state. Additionally, we can test Nginx directly by making an HTTP request using `curl http://localhost` or accessing the server's IP address in a browser. If the server responds with the Nginx default page or wer website content, it proves Nginx is running and responding to HTTP requests. In DevOps, checking multiple indicators ensures the service is not just running but also healthy and serving traffic correctly.
+Several indicators prove that Nginx is running. First, we can check the process status using commands like `systemctl status nginx` or `ps aux | grep nginx` to see if the Nginx process is active in the system. We can also verify that Nginx is listening on port 80 using `netstat -tuln | grep :80` or `ss -tuln | grep :80`, which should show the Nginx process in a LISTEN state. Additionally, we can test Nginx directly by making an HTTP request using `curl http://localhost` or accessing the server's IP address in a browser. If the server responds with the Nginx default page or your website content, it proves Nginx is running and responding to HTTP requests. In DevOps, checking multiple indicators ensures the service is not just running but also healthy and serving traffic correctly.
 
 ---
 
@@ -48,7 +48,7 @@ Several proofs demonstrate that the server is listening for HTTP traffic. Using 
 
 **3. Why must we capture a healthy baseline before simulating an incident?**
 
-Capturing a healthy baseline is critical for effective incident simulation and learning. A baseline shows what the system looks like under normal, healthy operation — response times, resource usage, error rates, and service behavior. Without this baseline, we cannot accurately identify what "broken" or "abnormal" looks like when we simulate an incident. By comparing the broken state to the healthy baseline, we can clearly see the differences and impacts of the incident. A baseline also helps we practice wer incident response and debugging procedures — we learn how to identify problems, investigate root causes, and restore service. In DevOps, this practice is invaluable because it prepares we to recognize and respond to real incidents in production. Understanding the difference between healthy and unhealthy states, and knowing how to restore service, builds confidence and skills that directly prevent downtime in real-world environments.
+Capturing a healthy baseline is critical for effective incident simulation and learning. A baseline shows what the system looks like under normal, healthy operation — response times, resource usage, error rates, and service behavior. Without this baseline, we cannot accurately identify what "broken" or "abnormal" looks like when we simulate an incident. By comparing the broken state to the healthy baseline, we can clearly see the differences and impacts of the incident. A baseline also helps we practice your incident response and debugging procedures — we learn how to identify problems, investigate root causes, and restore service. In DevOps, this practice is invaluable because it prepares we to recognize and respond to real incidents in production. Understanding the difference between healthy and unhealthy states, and knowing how to restore service, builds confidence and skills that directly prevent downtime in real-world environments.
 
 ---
 
@@ -69,7 +69,7 @@ Tell Claude exactly what this project does and what it is not allowed to do.
 ### Notes
 
 ---
-Answer the following in wer own words:
+Answer the following in your own words:
 
 **1. Why should Claude receive project-specific operational rules?**
 
@@ -105,23 +105,23 @@ Use Claude Code to inspect the environment and produce a read-only plan before c
 
 ### Notes
 
-Answer the following in wer own words:
+Answer the following in your own words:
 
 **1. Which part of this task represents the Gather phase?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **2. Did Claude follow the instruction not to create files? How did we verify this?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **3. Why is planning before coding useful in DevOps automation?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
@@ -135,59 +135,59 @@ Create one Bash script that gathers consistent Linux and Nginx health evidence.
 
 #### Screenshot 5 — Top section of `linux-triage.sh` showing variables, thresholds, and the checks array
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 #### Screenshot 6 — Middle section showing check functions and conditionals
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 #### Screenshot 7 — Bottom section showing the loop, summary function, and exit behavior
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 #### Screenshot 8 — Output of `bash -n scripts/linux-triage.sh` (no syntax errors) and `ls -l scripts/linux-triage.sh` showing executable permission
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 ### Notes
 
-Answer the following in wer own words:
+Answer the following in your own words:
 
 **1. What is stored in the checks array?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **2. How does the `for` loop use that array?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **3. Why are the health checks separated into functions?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **4. What is the purpose of `$(...)` in this script?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **5. Why does the script use different exit codes for HEALTHY, WARN, and FAIL?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
@@ -199,43 +199,43 @@ Run the Bash script against the healthy server and verify that it creates a repo
 
 ### Evidence
 
-#### Screenshot 9 — Output of `./scripts/linux-triage.sh` showing wer Full Name and all five check results
+#### Screenshot 9 — Output of `./scripts/linux-triage.sh` showing your Full Name and all five check results
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 #### Screenshot 10 — Output showing the captured exit code and final summary
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 ### Notes
 
-Answer the following in wer own words:
+Answer the following in your own words:
 
-**1. What is the overall status of wer healthy baseline?**
+**1. What is the overall status of your healthy baseline?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **2. Which exact Linux evidence proves the application is serving traffic?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
-**3. Did wer script return exit code 0 or 1? Explain why.**
+**3. Did your script return exit code 0 or 1? Explain why.**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **4. What is the difference between a warning and a failure in this script?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
@@ -249,41 +249,41 @@ Turn the Bash script into a reusable, manually invoked Agentic AI workflow.
 
 #### Screenshot 11 — `SKILL.md` showing the frontmatter, allowed tool restrictions, and safety rules
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 #### Screenshot 12 — `/linux-triage` output for the healthy server
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 ### Notes
 
-Answer the following in wer own words:
+Answer the following in your own words:
 
 **1. Why does this skill have Bash, Read, and Grep, but not Write?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **2. Why is `disable-model-invocation: true` useful for this skill?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **3. What part is performed by Bash, and what part is performed by Claude?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **4. Why is this better than asking Claude "Is my server healthy?" without giving it evidence?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
@@ -297,53 +297,53 @@ Create a controlled service failure, gather evidence through Bash, and let Claud
 
 #### Screenshot 13 — Output showing Nginx is inactive and the HTTP request fails
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 #### Screenshot 14 — `/linux-triage` output showing failed evidence, most likely cause, and a suggested recovery command
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
-#### Screenshot 15 — `incident-failure-report.txt` showing the failed checks and wer Full Name
+#### Screenshot 15 — `incident-failure-report.txt` showing the failed checks and your Full Name
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 ### Notes
 
-Answer the following in wer own words:
+Answer the following in your own words:
 
 **1. Which three checks failed?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **2. What evidence supports the conclusion that Nginx is unavailable?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **3. Did Claude execute the recovery command? Why is that important?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **4. Which phase of the Agentic Loop is represented by the Bash report?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **5. Which phase is represented by Claude's explanation?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
@@ -357,67 +357,67 @@ Recover the service as the human operator and prove that the system is healthy a
 
 #### Screenshot 16 — Output showing Nginx is active and `curl -I http://localhost` returns 200 OK
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 #### Screenshot 17 — Second `/linux-triage` output showing successful recovery with no FAIL results
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 #### Screenshot 18 — Output of `ls -lah reports` showing both `incident-failure-report.txt` and `recovery-report.txt`
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
-#### Screenshot 19 — `incident-summary.md` showing all required sections and wer Full Name
+#### Screenshot 19 — `incident-summary.md` showing all required sections and your Full Name
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 ### Notes
 
-Answer the following in wer own words:
+Answer the following in your own words:
 
 **1. What action did we execute manually?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **2. What evidence proves that the service recovered?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **3. Why is the second triage run necessary?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **4. What could go wrong if an AI agent automatically restarted every failed service?**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **5. In one sentence, explain the difference between using AI as a chatbot and using AI in this agentic workflow.**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 # Incident Summary
 
-Fill in all seven sections below in wer own words.
+Fill in all seven sections below in your own words.
 
-**Full Name:** Add wer full name here
+**Full Name:** Add your full name here
 
 **Date:** DD/MM/YYYY
 
@@ -425,43 +425,43 @@ Fill in all seven sections below in wer own words.
 
 **1. Reported Symptom**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **2. Evidence Collected**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **3. Most Likely Cause**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **4. Human-Approved Recovery Action**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **5. Verification**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **6. Safety Decision**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
 **7. Agentic Loop Mapping**
 
-Add wer answer here.
+Add your answer here.
 
 ---
 
@@ -471,31 +471,31 @@ Add wer answer here.
 
 #### LinkedIn Post URL
 
-Paste wer LinkedIn post URL here:
+Paste your LinkedIn post URL here:
 
-`Add wer URL here`
+`Add your URL here`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add wer screenshot here.
+Add your screenshot here.
 
 ---
 
 # GitHub Repository URL
 
-Paste the URL of wer GitHub folder or repository containing the assignment files here:
+Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`Add wer URL here`
+`Add your URL here`
 
 ---
 
 # Submission Instructions
 
-- Add all required screenshots in wer submission
+- Add all required screenshots in your submission
 - Full Name must be visible in required screenshots and the Bash report
-- All written answers must be in wer own words
+- All written answers must be in your own words
 - Do not expose sensitive information (keys, passwords, AWS account IDs, tokens)
 - GitHub URL must be included in this document
 
