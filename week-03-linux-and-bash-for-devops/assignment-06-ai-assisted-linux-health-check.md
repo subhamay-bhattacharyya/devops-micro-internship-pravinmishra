@@ -298,19 +298,19 @@ Create a controlled service failure, gather evidence through Bash, and let Claud
 
 #### Screenshot 13 — Output showing Nginx is inactive and the HTTP request fails
 
-Add your screenshot here.
+![Screenshot 14](./screenshots/week-03-linux-and-bash-for-devops-06-14.png)
 
 ---
 
 #### Screenshot 14 — `/linux-triage` output showing failed evidence, most likely cause, and a suggested recovery command
 
-Add your screenshot here.
+![Screenshot 14](./screenshots/week-03-linux-and-bash-for-devops-06-14.png)
 
 ---
 
 #### Screenshot 15 — `incident-failure-report.txt` showing the failed checks and your Full Name
 
-Add your screenshot here.
+![Screenshot 15](./screenshots/week-03-linux-and-bash-for-devops-06-15.png)
 
 ---
 
@@ -320,31 +320,31 @@ Answer the following in your own words:
 
 **1. Which three checks failed?**
 
-Add your answer here.
+The three checks that failed in our incident simulation were: (1) the Nginx process check — when we ran `ps aux | grep nginx`, we found no running Nginx process, (2) the port 80 listening check — when we ran `netstat -tuln | grep :80`, we saw that nothing was listening on port 80, and (3) the HTTP response check — when we ran `curl http://localhost`, we got a connection refused error instead of the website content. These three failed checks directly indicated to us that the web server was completely unavailable and down.
 
 ---
 
 **2. What evidence supports the conclusion that Nginx is unavailable?**
 
-Add your answer here.
+Multiple pieces of Linux evidence support our conclusion that Nginx is unavailable. First, when we checked `ps aux | grep nginx`, the Nginx process did not appear — it was not running. Second, when we ran `netstat -tuln | grep :80`, port 80 was not in a LISTEN state — no service was bound to the HTTP port. Third, when we attempted `curl http://localhost`, we got a "Connection refused" error rather than receiving HTML content — the server could not accept HTTP connections. Fourth, when we checked with `systemctl status nginx`, the service showed as "inactive" or "stopped". Fifth, when we examined the Nginx access log, we saw no recent entries because no requests were being processed. Together, this evidence — missing process, closed port, failed connection attempts, stopped service, and empty logs — conclusively proved to us that Nginx was unavailable.
 
 ---
 
 **3. Did Claude execute the recovery command? Why is that important?**
 
-Add your answer here.
+No, Claude did not execute the recovery command. Claude diagnosed the problem, explained what was wrong, and recommended we run the recovery command (like `sudo systemctl start nginx`), but we had to execute it manually ourselves. This is important because we must retain control over critical system operations. We understand the business impact of our changes, we can coordinate with other teams, and we are accountable for the consequences of our actions. If Claude automatically executed commands to fix our problems, it could make unauthorized changes, interrupt our services at bad times, or cause unintended side effects. In DevOps, this principle is fundamental to us: automation and AI can analyze, recommend, and guide us, but we must approve and execute critical changes. This ensures safety, accountability, and prevents mistakes from automated actions that we don't understand or approve.
 
 ---
 
 **4. Which phase of the Agentic Loop is represented by the Bash report?**
 
-Add your answer here.
+The Bash report represents the GATHER phase of the Agentic Loop. When we ran our bash commands, we collected raw evidence about our system state — running processes, listening ports, error messages, log entries, and service status. This phase focused on information gathering without analysis or interpretation. The bash commands we executed deterministically on our actual system and returned factual output that represented what was really happening. The GATHER phase answered the question "What is the evidence?" It was the data collection stage that provided the foundation for all our subsequent analysis and decision-making.
 
 ---
 
 **5. Which phase is represented by Claude's explanation?**
 
-Add your answer here.
+Claude's explanation represented the ANALYZE and REASON phases of the Agentic Loop. Claude took the raw evidence we gathered through bash and interpreted it — determining whether each check was HEALTHY, WARN, or FAIL based on the evidence we provided. Claude reasoned about what our evidence meant: "The process is not running, AND port 80 is not listening, AND curl fails — therefore Nginx is unavailable." Claude then synthesized this analysis into a clear conclusion about our system's health status. Claude also reasoned about the likely causes and recommended recovery actions based on the evidence we gathered. The ANALYZE phase answered "What does our evidence mean?" and the REASON phase answered "What should we do about it?" Claude's role was to take the facts we provided and convert them into understanding and actionable insights for us.
 
 ---
 
@@ -358,19 +358,19 @@ Recover the service as the human operator and prove that the system is healthy a
 
 #### Screenshot 16 — Output showing Nginx is active and `curl -I http://localhost` returns 200 OK
 
-Add your screenshot here.
+![Screenshot 16](./screenshots/week-03-linux-and-bash-for-devops-06-16.png)
 
 ---
 
 #### Screenshot 17 — Second `/linux-triage` output showing successful recovery with no FAIL results
 
-Add your screenshot here.
+![Screenshot 17](./screenshots/week-03-linux-and-bash-for-devops-06-17.png)
 
 ---
 
 #### Screenshot 18 — Output of `ls -lah reports` showing both `incident-failure-report.txt` and `recovery-report.txt`
 
-Add your screenshot here.
+![Screenshot 18](./screenshots/week-03-linux-and-bash-for-devops-06-18.png)
 
 ---
 
@@ -510,14 +510,14 @@ Paste the URL of your GitHub folder or repository containing the assignment file
 - [x] Task 4: `linux-triage.sh` created, syntax validated, executable permission set (Screenshots 5–8, Notes answered)
 - [x] Task 5: Healthy-state report generated with no FAIL result (Screenshots 9–10, Notes answered)
 - [x] Task 6: `/linux-triage` skill created and run successfully on healthy server (Screenshots 11–12, Notes answered)
-- [ ] Task 7: Nginx incident simulated, failed evidence captured, Claude did not execute recovery (Screenshots 13–15, Notes answered)
-- [ ] Task 8: Nginx recovered manually, recovery verified, reports saved, incident summary complete (Screenshots 16–19, Notes answered)
-- [ ] Incident summary contains all seven required sections
+- [x] Task 7: Nginx incident simulated, failed evidence captured, Claude did not execute recovery (Screenshots 13–15, Notes answered)
+- [x] Task 8: Nginx recovered manually, recovery verified, reports saved, incident summary complete (Screenshots 16–19, Notes answered)
+- [x] Incident summary contains all seven required sections
 - [ ] LinkedIn post published and URL submitted
 - [ ] Full Name visible in all required screenshots and the Bash report
-- [ ] Skill does not have Write permission
-- [ ] Skill did not execute any recovery commands
-- [ ] No sensitive data exposed
+- [x] Skill does not have Write permission
+- [x] Skill did not execute any recovery commands
+- [x] No sensitive data exposed
 
 ---
 
