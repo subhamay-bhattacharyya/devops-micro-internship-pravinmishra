@@ -206,7 +206,7 @@ Use loops to repeat a task multiple times.
 
 #### Screenshot 2 — Output of `./counter.sh`
 
-![Screenshot 10](./screenshots/week-03-linux-and-bash-for-devops-05-10.png)
+![Screenshot 11](./screenshots/week-03-linux-and-bash-for-devops-05-11.png)
 
 ---
 
@@ -248,19 +248,19 @@ Use file checks and conditionals to verify whether files and directories exist.
 
 #### Screenshot 1 — Output of `ls -lah ../test-folder`
 
-Add wer screenshot here.
+![Screenshot 12](./screenshots/week-03-linux-and-bash-for-devops-05-12.png)
 
 ---
 
 #### Screenshot 2 — Content of `file-check.sh`
 
-Add wer screenshot here.
+![Screenshot 13](./screenshots/week-03-linux-and-bash-for-devops-05-13.png)
 
 ---
 
 #### Screenshot 3 — Output of `./file-check.sh`
 
-Add wer screenshot here.
+![Screenshot 14](./screenshots/week-03-linux-and-bash-for-devops-05-14.png)
 
 ---
 
@@ -270,25 +270,25 @@ Answer the following in wer own words:
 
 **1. What does `-d` check in Bash?**
 
-Add wer answer here.
+The `-d` operator tests whether a path is a directory. It's a conditional test in Bash that returns true if the specified path exists and is a directory, and false otherwise. For example, `if [ -d "/var/log" ]` checks whether `/var/log` is a directory. This is useful in scripts when you need to verify that a directory exists before trying to write files to it or navigate into it. In DevOps automation, you might use `-d` to check if backup directories, log directories, or configuration directories exist before performing operations on them. This prevents errors and ensures your script behaves correctly regardless of the system state.
 
 ---
 
 **2. What does `-f` check in Bash?**
 
-Add wer answer here.
+The `-f` operator tests whether a path is a regular file. It returns true if the specified path exists and is a file (not a directory or special file), and false otherwise. For example, `if [ -f "/etc/config.yaml" ]` checks whether `/etc/config.yaml` is a regular file. This is essential in scripts when you need to verify that a configuration file, deployment script, or data file exists before trying to read or process it. In DevOps workflows, `-f` is commonly used to check for the existence of deployment artifacts, configuration files, or secrets before using them, preventing runtime errors and ensuring reliable automation.
 
 ---
 
 **3. Why should file and directory paths be stored in variables?**
 
-Add wer answer here.
+Storing file and directory paths in variables makes scripts more flexible, maintainable, and less error-prone. If you hardcode paths throughout your script, changing a path requires editing multiple locations, increasing the risk of mistakes. By storing a path in a variable once, you can reuse it throughout the script by referencing the variable, making changes easier and reducing duplication. Variables also allow scripts to be parameterized — you can set different paths for different environments (development, staging, production) without modifying the script logic. In DevOps, this practice is essential for creating reusable, portable scripts that work across different systems and configurations. It also makes scripts more readable and maintainable for teams working on the same automation code.
 
 ---
 
 **4. What happens if the file does not exist?**
 
-Add wer answer here.
+If a file does not exist, the `-f` test returns false, and the `if` statement executes the code in the `else` block (if one exists). For example, in `if [ -f "$config_file" ]; then ... else echo "File not found"; fi`, if the file doesn't exist, the script will print "File not found" instead of trying to process the missing file. If there's no `else` block, the script simply skips the code in the `if` block and continues with the rest of the script. Without proper file existence checks, the script might crash or produce errors when trying to read or process a non-existent file. In DevOps automation, checking for file existence is a best practice — it prevents failures, provides clear error messages, and allows the script to handle missing files gracefully by taking alternative actions or alerting the operator.
 
 ---
 
@@ -441,7 +441,7 @@ Add wer screenshot here.
 - [x] Task 3: Variables script created and run (Screenshots 1–2, Notes answered)
 - [x] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes answered)
 - [x] Task 5: Counter loop script created and run (Screenshots 1–2, Notes answered)
-- [ ] Task 6: File validation script created and run (Screenshots 1–3, Notes answered)
+- [x] Task 6: File validation script created and run (Screenshots 1–3, Notes answered)
 - [ ] Task 7: Pass/Retry conditional script tested with both values (Screenshots 1–4, Notes answered)
 - [ ] Task 8: Final automation script created and run (Screenshots 1–3, Notes answered)
 - [ ] All scripts run without errors
