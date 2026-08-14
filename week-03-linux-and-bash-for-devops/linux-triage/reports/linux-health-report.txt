@@ -1,0 +1,29 @@
+========================================
+Linux Incident Triage Report
+========================================
+Full Name: Subhamay Bhattacharyya
+Timestamp: 2026-08-14T17:08:55Z
+Hostname: ip-172-31-33-44
+Target Service: nginx
+Target URL: http://localhost
+
+[PASS] Nginx service is active
+[PASS] Port 80 is listening
+[PASS] Local HTTP check returned status 200
+[PASS] Root disk usage is 60%
+[PASS] Available memory is 1554 MB
+
+Recent Nginx service logs (last 5 lines):
+ Aug 14 12:12:37 ip-172-31-33-44 systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy server...
+ Aug 14 12:12:37 ip-172-31-33-44 systemd[1]: nginx.service: Deactivated successfully.
+ Aug 14 12:12:37 ip-172-31-33-44 systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy server.
+ Aug 14 12:12:37 ip-172-31-33-44 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+ Aug 14 12:12:37 ip-172-31-33-44 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+
+Summary:
+PASS: 5
+WARN: 0
+FAIL: 0
+Overall Status: HEALTHY
+Script Exit Code: 0
+Report File: /home/ubuntu/week-03-agentic-linux/reports/linux-health-report.txt

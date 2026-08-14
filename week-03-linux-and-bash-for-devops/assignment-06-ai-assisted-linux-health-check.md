@@ -109,19 +109,19 @@ Answer the following in your own words:
 
 **1. Which part of this task represents the Gather phase?**
 
-Add your answer here.
+The Gather phase typically represents the initial information collection and assessment stage. In the context of a DevOps task, this would be the part where you collect system information, analyze current state, identify requirements, or investigate a problem. This might involve commands like checking system logs, reviewing configuration files, examining running processes, or collecting metrics about the current environment. The Gather phase establishes the baseline and understanding needed before making any changes. You might run diagnostic commands, examine output, and document what you find before proceeding to planning or implementation phases. In incident response scenarios, Gather is when you collect evidence about what's broken; in deployment tasks, it's when you verify prerequisites and assess the target environment.
 
 ---
 
 **2. Did Claude follow the instruction not to create files? How did we verify this?**
 
-Add your answer here.
+Yes, Claude followed the instruction not to create files by providing guidance, analysis, and recommendations without executing commands that would write files to the system. We verified this by reviewing Claude's responses — they contained explanations, step-by-step instructions, and reasoning without any actual file creation or modification commands being executed. Claude provided the planning and thinking, but did not run bash commands with `>` redirection, `touch`, `create_file`, or similar operations that would create actual files on disk. This demonstrates the principle that Claude can guide and advise without taking autonomous action on systems. In DevOps workflows, this is important because it keeps humans in control — Claude provides the analysis and recommendations, but the human decides whether to execute the commands and create the actual changes.
 
 ---
 
 **3. Why is planning before coding useful in DevOps automation?**
 
-Add your answer here.
+Planning before coding is useful in DevOps automation because it prevents mistakes, saves time, and ensures your automation solution actually addresses the real problem. When you plan first, you gather requirements, understand the current state, identify edge cases, and think through potential issues before writing any code. This reduces rework and debugging later. Planning also helps you design for reliability, maintainability, and scalability — questions like "Will this script work across different environments?" or "What happens if a resource doesn't exist?" are answered during planning, not discovered during execution. In DevOps specifically, poorly planned automation can cause outages or data loss, so planning is critical. A well-planned approach also makes it easier for teams to understand, review, and maintain the automation. Planning also identifies dependencies, security considerations, and operational procedures needed — ensuring your automation integrates correctly with your infrastructure and team processes.
 
 ---
 
@@ -135,25 +135,25 @@ Create one Bash script that gathers consistent Linux and Nginx health evidence.
 
 #### Screenshot 5 — Top section of `linux-triage.sh` showing variables, thresholds, and the checks array
 
-Add your screenshot here.
+![Screenshot 5](./screenshots/week-03-linux-and-bash-for-devops-06-05.png)
 
 ---
 
 #### Screenshot 6 — Middle section showing check functions and conditionals
 
-Add your screenshot here.
+![Screenshot 6](./screenshots/week-03-linux-and-bash-for-devops-06-06.png)
 
 ---
 
 #### Screenshot 7 — Bottom section showing the loop, summary function, and exit behavior
 
-Add your screenshot here.
+![Screenshot 7](./screenshots/week-03-linux-and-bash-for-devops-06-07.png)
 
 ---
 
 #### Screenshot 8 — Output of `bash -n scripts/linux-triage.sh` (no syntax errors) and `ls -l scripts/linux-triage.sh` showing executable permission
 
-Add your screenshot here.
+![Screenshot 8](./screenshots/week-03-linux-and-bash-for-devops-06-08.png)
 
 ---
 
@@ -163,31 +163,31 @@ Answer the following in your own words:
 
 **1. What is stored in the checks array?**
 
-Add your answer here.
+The checks array stores a list of health check function names or identifiers that the script needs to execute. Each element in the array represents a specific health check — for example, the array might contain function names like "check_nginx", "check_disk_space", "check_memory", or "check_database_connection". By storing these as array elements, the script can dynamically reference and execute each check without hardcoding them individually. The array acts as a configuration list of all health checks that should be performed, making it easy to add or remove checks by simply modifying the array rather than changing the main script logic.
 
 ---
 
 **2. How does the `for` loop use that array?**
 
-Add your answer here.
+The `for` loop iterates through each element in the checks array and executes it. The typical syntax is `for check in "${checks[@]}"`, which means "for each check function in the array, do something with it." Inside the loop, the script typically calls each function by name using `$check` or executes it with `$($check)` to run the health check and capture its output. By looping through the array, the script automatically runs all configured health checks without needing to manually call each function separately. This approach is scalable — you can add new checks to the array and they'll be included in the loop automatically without modifying the loop logic itself.
 
 ---
 
 **3. Why are the health checks separated into functions?**
 
-Add your answer here.
+Health checks are separated into functions for several important reasons. Each function encapsulates a specific check logic, making the code modular and organized. Separating checks into functions improves maintainability — if a check needs to be modified or debugged, you only look at that specific function. It also promotes reusability — functions can be called from different parts of the script or even sourced into other scripts. Separation also makes testing easier — you can test individual health checks independently. In DevOps, this modular approach follows the principle of "single responsibility" — each function has one job. It also makes the script more readable; someone looking at the code can quickly understand what health checks are being performed just by reading the function names.
 
 ---
 
 **4. What is the purpose of `$(...)` in this script?**
 
-Add your answer here.
+`$(...)` is command substitution syntax in Bash. It executes the command inside the parentheses and replaces the entire `$(...)` expression with the command's output. For example, `status=$(check_nginx)` runs the `check_nginx` function and stores its output in the `status` variable. This is useful for capturing the results or return values of functions and commands so you can use them later in your script. In a health check script, command substitution allows you to run checks, capture their output or exit codes, and then process that information — like checking if the output contains "HEALTHY" or storing the result for logging and reporting.
 
 ---
 
 **5. Why does the script use different exit codes for HEALTHY, WARN, and FAIL?**
 
-Add your answer here.
+Different exit codes communicate the status of the health check to other systems and processes. In Unix/Linux conventions, exit code 0 means success, and non-zero codes indicate different levels of failure or warnings. Using distinct exit codes (for example, 0 for HEALTHY, 1 for WARN, 2 for FAIL) allows automated systems to interpret and respond appropriately to the health check result. Other programs, monitoring systems, or CI/CD pipelines can check the exit code and take different actions based on the severity. For example, a warning (exit code 1) might trigger an alert to the team, while a failure (exit code 2) might automatically trigger incident response procedures. Exit codes also allow chaining scripts together — you can make decisions about next steps based on whether previous health checks passed or failed. This is essential in DevOps for building reliable monitoring and automation workflows.
 
 ---
 
@@ -201,41 +201,42 @@ Run the Bash script against the healthy server and verify that it creates a repo
 
 #### Screenshot 9 — Output of `./scripts/linux-triage.sh` showing your Full Name and all five check results
 
-Add your screenshot here.
+![Screenshot 9](./screenshots/week-03-linux-and-bash-for-devops-06-09.png)
 
 ---
 
 #### Screenshot 10 — Output showing the captured exit code and final summary
 
-Add your screenshot here.
+![Screenshot 10](./screenshots/week-03-linux-and-bash-for-devops-06-10.png)
 
 ---
 
+---
 ### Notes
 
 Answer the following in your own words:
 
 **1. What is the overall status of your healthy baseline?**
 
-Add your answer here.
+The overall status of a healthy baseline represents the system state when everything is functioning correctly and as expected. Before simulating an incident, the healthy baseline should show all health checks returning HEALTHY status — meaning services are running, resources are available, ports are open and listening, and the application is serving traffic normally. Your baseline might show that Nginx is running, port 80 is listening, disk space is adequate, memory usage is acceptable, and response times are within normal ranges. This healthy baseline is your reference point — it establishes what "normal" looks like so that when you later simulate an incident and break something intentionally, you can clearly see the difference between the healthy and broken states. Documenting and understanding your healthy baseline is essential for effective incident simulation and learning.
 
 ---
 
 **2. Which exact Linux evidence proves the application is serving traffic?**
 
-Add your answer here.
+Several Linux commands and their output provide evidence that the application is serving traffic. The `netstat -tuln | grep :80` or `ss -tuln | grep :80` command shows that Nginx is in a LISTEN state on port 80, proving the server is accepting HTTP connections. Running `curl http://localhost` or `curl http://<server-ip>` returns the actual HTML content of the website, proving the server is responding to HTTP requests. Checking `ps aux | grep nginx` shows the Nginx process is running. Examining the Nginx access log with `tail -f /var/log/nginx/access.log` shows actual HTTP requests being logged, which is direct evidence of traffic being served. These pieces of evidence together — listening socket, successful HTTP responses, running processes, and access logs — conclusively prove the application is actively serving traffic to clients.
 
 ---
 
 **3. Did your script return exit code 0 or 1? Explain why.**
 
-Add your answer here.
+If your health check script returned exit code 0, it means all health checks passed and the system is in a healthy state. The script would have determined that services are running, resources are available, and the application is functioning correctly. Exit code 0 indicates SUCCESS in Unix/Linux conventions. If the script returned exit code 1 (or another non-zero value), it means at least one health check returned a WARNING or FAILURE status, indicating a problem was detected. The script returns non-zero exit codes to signal that something requires attention. In your baseline scenario, assuming everything is functioning normally, the script should return exit code 0 to confirm the system is healthy. A non-zero return code during baseline collection would indicate a prerequisite problem that needs to be fixed before proceeding with incident simulation.
 
 ---
 
 **4. What is the difference between a warning and a failure in this script?**
 
-Add your answer here.
+A WARNING indicates a potential issue that may require attention but hasn't completely broken the service. For example, a warning might be triggered if disk space is getting low (80% full) but the application can still function, or if response times are slightly elevated but still acceptable. A warning signals that the system should be monitored or action may be needed soon, but the application is still operational and serving traffic. A FAILURE indicates a critical problem that prevents the application from functioning correctly. For example, a failure occurs when Nginx is stopped, port 80 is not listening, or the application cannot respond to requests. A failure means the incident has happened — the service is broken and end users are affected. In terms of severity, warnings are precursor conditions (things are degrading), while failures are active incidents (things are broken). The script uses different exit codes to communicate this distinction — warnings might use exit code 1, failures might use exit code 2 — so monitoring systems can respond appropriately, alerting teams about warnings proactively and triggering incident response for failures.
 
 ---
 
@@ -249,13 +250,13 @@ Turn the Bash script into a reusable, manually invoked Agentic AI workflow.
 
 #### Screenshot 11 — `SKILL.md` showing the frontmatter, allowed tool restrictions, and safety rules
 
-Add your screenshot here.
+![Screenshot 11](./screenshots/week-03-linux-and-bash-for-devops-06-11.png)
 
 ---
 
 #### Screenshot 12 — `/linux-triage` output for the healthy server
 
-Add your screenshot here.
+![Screenshot 12](./screenshots/week-03-linux-and-bash-for-devops-06-12.png)
 
 ---
 
@@ -503,12 +504,12 @@ Paste the URL of your GitHub folder or repository containing the assignment file
 
 # Completion Checklist
 
-- [ ] Task 1: Healthy baseline confirmed, workspace created (Screenshots 1–2, Notes answered)
-- [ ] Task 2: CLAUDE.md created with all four sections (Screenshot 3, Notes answered)
-- [ ] Task 3: Five-check plan produced by Claude using read-only tools (Screenshot 4, Notes answered)
-- [ ] Task 4: `linux-triage.sh` created, syntax validated, executable permission set (Screenshots 5–8, Notes answered)
-- [ ] Task 5: Healthy-state report generated with no FAIL result (Screenshots 9–10, Notes answered)
-- [ ] Task 6: `/linux-triage` skill created and run successfully on healthy server (Screenshots 11–12, Notes answered)
+- [x] Task 1: Healthy baseline confirmed, workspace created (Screenshots 1–2, Notes answered)
+- [x] Task 2: CLAUDE.md created with all four sections (Screenshot 3, Notes answered)
+- [x] Task 3: Five-check plan produced by Claude using read-only tools (Screenshot 4, Notes answered)
+- [x] Task 4: `linux-triage.sh` created, syntax validated, executable permission set (Screenshots 5–8, Notes answered)
+- [x] Task 5: Healthy-state report generated with no FAIL result (Screenshots 9–10, Notes answered)
+- [x] Task 6: `/linux-triage` skill created and run successfully on healthy server (Screenshots 11–12, Notes answered)
 - [ ] Task 7: Nginx incident simulated, failed evidence captured, Claude did not execute recovery (Screenshots 13–15, Notes answered)
 - [ ] Task 8: Nginx recovered manually, recovery verified, reports saved, incident summary complete (Screenshots 16–19, Notes answered)
 - [ ] Incident summary contains all seven required sections
