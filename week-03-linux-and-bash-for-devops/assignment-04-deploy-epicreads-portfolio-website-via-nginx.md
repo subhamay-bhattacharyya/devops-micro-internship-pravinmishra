@@ -20,7 +20,7 @@ Verify the Ubuntu VM and Nginx are ready for deployment.
 
 #### Screenshot 0 — Output of `sudo systemctl status nginx --no-pager` showing Active (running)
 
-Add your screenshot here.
+![Screenshot 0](./screenshots/week-03-linux-and-bash-for-devops-04-00.png)
 
 ---
 
@@ -34,7 +34,7 @@ Download and extract the portfolio website template.
 
 #### Screenshot 1 — Output of `ls -la` showing the extracted project folder
 
-Add your screenshot here.
+![Screenshot 1](./screenshots/week-03-linux-and-bash-for-devops-04-01.png)
 
 ---
 
@@ -48,7 +48,7 @@ Update the website footer with your deployment details.
 
 #### Screenshot 2 — Nano editor open with the updated footer showing your Full Name, Group, Week, and Date
 
-Add your screenshot here.
+![Screenshot 2](./screenshots/week-03-linux-and-bash-for-devops-04-02.png)
 
 ---
 
@@ -62,13 +62,13 @@ Deploy the portfolio website to the Nginx web root.
 
 #### Screenshot 3 — Output of `sudo nginx -t` showing configuration test successful
 
-Add your screenshot here.
+![Screenshot 3](./screenshots/week-03-linux-and-bash-for-devops-04-03.png)
 
 ---
 
 #### Screenshot 4 — Output of `ls /var/www/html` showing deployed website files
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-03-linux-and-bash-for-devops-04-04.png)
 
 ---
 
@@ -82,13 +82,13 @@ Verify the deployed website is publicly accessible and the footer contains your 
 
 #### Screenshot 5 — Output of `curl ifconfig.me` showing the server's public IP address
 
-Add your screenshot here.
+![Screenshot 5](./screenshots/week-03-linux-and-bash-for-devops-04-05.png)
 
 ---
 
 #### Screenshot 6 — Browser showing the live website with your Full Name and deployment details in the footer
 
-Add your screenshot here.
+![Screenshot 6](./screenshots/week-03-linux-and-bash-for-devops-04-06.png)
 
 ---
 
@@ -102,13 +102,13 @@ Verify the deployed website and Nginx service are healthy.
 
 #### Screenshot 7 — Output of `systemctl is-enabled nginx`
 
-Add your screenshot here.
+![Screenshot 7](./screenshots/week-03-linux-and-bash-for-devops-04-07.png)
 
 ---
 
 #### Screenshot 8 — Output of `curl -I http://localhost` showing 200 OK
 
-Add your screenshot here.
+![Screenshot 8](./screenshots/week-03-linux-and-bash-for-devops-04-08.png)
 
 ---
 
@@ -120,13 +120,13 @@ Add your screenshot here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[LinkedIn Post](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_devops-aws-nginx-share-7494005939533156352-58dC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY)
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the live website with your Full Name in the footer
 
-Add your screenshot here.
+![Screenshot 9](./screenshots/week-03-linux-and-bash-for-devops-04-09.png)
 
 ---
 
@@ -141,18 +141,18 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Screenshot 0: Nginx service status (active/running)
-- [ ] Screenshot 1: Website files downloaded and extracted
-- [ ] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
-- [ ] Screenshot 3: Nginx configuration test successful
-- [ ] Screenshot 4: Website files deployed to /var/www/html
-- [ ] Screenshot 5: Public IP retrieved
-- [ ] Screenshot 6: Live website accessible in browser with footer details
-- [ ] Screenshot 7: Nginx enabled on boot
-- [ ] Screenshot 8: Local HTTP response returns 200 OK
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots
-- [ ] No sensitive data exposed
+- [x] Screenshot 0: Nginx service status (active/running)
+- [x] Screenshot 1: Website files downloaded and extracted
+- [x] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
+- [x] Screenshot 3: Nginx configuration test successful
+- [x] Screenshot 4: Website files deployed to /var/www/html
+- [x] Screenshot 5: Public IP retrieved
+- [x] Screenshot 6: Live website accessible in browser with footer details
+- [x] Screenshot 7: Nginx enabled on boot
+- [x] Screenshot 8: Local HTTP response returns 200 OK
+- [x] LinkedIn post published and URL submitted
+- [x] Full Name visible in all required screenshots
+- [x] No sensitive data exposed
 
 ---
 
