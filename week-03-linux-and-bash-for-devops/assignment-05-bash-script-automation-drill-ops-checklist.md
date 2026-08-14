@@ -302,25 +302,25 @@ Use if-else conditionals to make decisions based on a variable value.
 
 #### Screenshot 1 — Content of `score-check.sh` with `score=85`
 
-Add wer screenshot here.
+![Screenshot 15](./screenshots/week-03-linux-and-bash-for-devops-05-15.png)
 
 ---
 
 #### Screenshot 2 — Output showing `Result: Pass`
 
-Add wer screenshot here.
+![Screenshot 16](./screenshots/week-03-linux-and-bash-for-devops-05-16.png)
 
 ---
 
 #### Screenshot 3 — Content of `score-check.sh` with `score=55`
 
-Add wer screenshot here.
+![Screenshot 17](./screenshots/week-03-linux-and-bash-for-devops-05-17.png)
 
 ---
 
 #### Screenshot 4 — Output showing `Result: Retry`
 
-Add wer screenshot here.
+![Screenshot 18](./screenshots/week-03-linux-and-bash-for-devops-05-18.png)
 
 ---
 
@@ -330,25 +330,25 @@ Answer the following in wer own words:
 
 **1. What is the purpose of if-else in Bash?**
 
-Add wer answer here.
+The `if-else` statement allows scripts to make decisions based on conditions. It evaluates a test or condition and executes different code depending on whether the condition is true or false. The `if` block runs if the condition is true, and the optional `else` block runs if the condition is false. This enables branching logic — the script can take different paths based on the current state. For example, an `if-else` can check whether a file exists and proceed accordingly, or test if a value is within an acceptable range before proceeding. In DevOps automation, `if-else` statements are fundamental for error handling, validation, and decision-making. They allow scripts to respond intelligently to different situations, like checking if a deployment succeeded before moving to the next step, or verifying that required tools are installed before running a process.
 
 ---
 
 **2. What does `-ge` mean?**
 
-Add wer answer here.
+The `-ge` operator means "greater than or equal to." It's a numerical comparison operator used in Bash conditionals to test whether one number is greater than or equal to another. For example, `if [ $count -ge 5 ]` checks whether the value in `$count` is greater than or equal to 5. Other comparison operators include `-lt` (less than), `-le` (less than or equal to), `-eq` (equal to), `-ne` (not equal to), and `-gt` (greater than). These operators are essential for numeric comparisons in conditional statements. In DevOps scripts, you might use `-ge` to check if a resource count meets minimum requirements, if a response time is below a threshold, or if a version number is sufficient before proceeding with an operation.
 
 ---
 
 **3. Why should conditions be tested with different values?**
 
-Add wer answer here.
+Testing conditions with different values is crucial for validating that your script behaves correctly in all scenarios. Different input values expose edge cases and potential bugs that might not be apparent from a single test. For example, testing a condition with values at the boundary (like testing `-ge 5` with values 4, 5, and 6) ensures the comparison operator works correctly. Testing with valid and invalid values confirms that your error handling is effective. In DevOps automation, thorough testing prevents production failures. You should test your scripts with various inputs — different file paths, different environment variables, different user inputs, and various system states. This ensures your automation works reliably across all environments and handles unexpected situations gracefully without crashing or producing incorrect results.
 
 ---
 
 **4. How can conditionals help in automation scripts?**
 
-Add wer answer here.
+Conditionals enable scripts to respond dynamically to different situations, making automation intelligent and resilient. They allow scripts to validate input, check for prerequisites, handle errors, and adjust behavior based on system state. For example, a deployment script might use conditionals to check if a database connection succeeds before deploying code, or verify that required configuration files exist before proceeding. Conditionals prevent scripts from executing commands that will fail — if a directory doesn't exist, the script can create it instead of crashing. In DevOps, conditionals are essential for writing robust automation that works across diverse environments. They enable scripts to handle edge cases, provide meaningful error messages, retry failed operations, and make decisions without human intervention. Well-written conditionals make automation safer, more efficient, and more trustworthy for production deployments and large-scale infrastructure management.
 
 ---
 
@@ -442,7 +442,7 @@ Add wer screenshot here.
 - [x] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes answered)
 - [x] Task 5: Counter loop script created and run (Screenshots 1–2, Notes answered)
 - [x] Task 6: File validation script created and run (Screenshots 1–3, Notes answered)
-- [ ] Task 7: Pass/Retry conditional script tested with both values (Screenshots 1–4, Notes answered)
+- [x] Task 7: Pass/Retry conditional script tested with both values (Screenshots 1–4, Notes answered)
 - [ ] Task 8: Final automation script created and run (Screenshots 1–3, Notes answered)
 - [ ] All scripts run without errors
 - [ ] Full Name visible in all required screenshots
