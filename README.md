@@ -134,7 +134,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 01 | Success Mindset | ✅ Completed| ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_shortcuts-dont-save-time-they-move-the-share-7489869144427991040-TpWi/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-01-success-mindset.html) |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7492303222162735104-LwkQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-02-reflection.html) |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmibypravinmishra-linux-bash-ugcPost-7494149545476444160-ZBUJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY) | [Blog](https://subhamay-bhattacharyya.github.io/.github/blogs/dmi-week-03-build-ai-assisted-incident-response.html) |
-| 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
+| 04 | Git & GitHub | 🔄 In Progress | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |

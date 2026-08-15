@@ -20,13 +20,13 @@ Create a `CodeTrack` project folder and initialize it as a Git repository.
 
 #### Screenshot 1 — Output of `git init` inside `CodeTrack` showing "Initialized empty Git repository"
 
-Add your screenshot here.
+![Screenshot 1](./screenshots/week-04-git-and-github-for-devops-envineers-01-01.png)
 
 ---
 
 #### Screenshot 2 — Output of `ls -a` showing the `.git` folder
 
-Add your screenshot here.
+![Screenshot 2](./screenshots/week-04-git-and-github-for-devops-envineers-01-02.png)
 
 ---
 
@@ -34,7 +34,17 @@ Add your screenshot here.
 
 **1. What is the `.git` folder, and why does it matter?**
 
-Add your answer here.
+The `.git` folder is a hidden directory that Git creates in the root of a repository when you run `git init`. It contains all the version control metadata and history for your project — every commit, branch, tag, configuration setting, and object database that Git needs to track changes and manage versions. The `.git` folder essentially *is* your repository; without it, your project is just a regular directory with no version control.
+
+**Why it matters:**
+
+- **Complete Project History:** The `.git` folder stores every version of every file that's ever been committed, allowing you to view history, compare versions, and revert to any previous state.
+- **Branching & Merging:** Git uses the `.git` folder to track branches, manage merge history, and handle complex workflows across teams.
+- **Collaboration:** When you push to a remote repository (like GitHub), you're sending the contents of `.git` so other developers can access the same history and versions.
+- **Recovery:** If you accidentally delete files or make mistakes, the `.git` folder contains the backup — you can restore anything that was committed.
+- **Integrity:** Git uses cryptographic hashing (SHA-1) stored in `.git` to ensure file integrity and detect corruption.
+
+In DevOps, the `.git` folder is critical because infrastructure-as-code (Terraform, Ansible, Docker configurations) must be version-controlled. The `.git` folder tracks every change, who made it, when, and why (via commit messages). This enables auditability, reproducibility, and the ability to roll back to known-good configurations if something breaks. Without `.git`, you lose the entire history of your infrastructure changes.
 
 ---
 
@@ -48,7 +58,7 @@ Set your Git username and email for the `CodeTrack` repository only, using `git 
 
 #### Screenshot 3 — Output of `git config --local --list` showing your `user.name` and `user.email`
 
-Add your screenshot here.
+![Screenshot 3](./screenshots/week-04-git-and-github-for-devops-envineers-01-03.png)
 
 ---
 
@@ -62,7 +72,7 @@ Set a global Git username and email for this machine using `git config --global`
 
 #### Screenshot 4 — Output of `git config --global --list` showing your `user.name` and `user.email`
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-04-git-and-github-for-devops-envineers-01-04.png)
 
 ---
 
@@ -76,11 +86,11 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] `CodeTrack` folder created and initialized as a Git repository (Screenshots 1–2)
-- [ ] Explanation of the `.git` folder written in your own words
-- [ ] Local `user.name` and `user.email` configured and verified (Screenshot 3)
-- [ ] Global `user.name` and `user.email` configured and verified (Screenshot 4)
-- [ ] No sensitive data exposed
+- [x] `CodeTrack` folder created and initialized as a Git repository (Screenshots 1–2)
+- [x] Explanation of the `.git` folder written in your own words
+- [x] Local `user.name` and `user.email` configured and verified (Screenshot 3)
+- [x] Global `user.name` and `user.email` configured and verified (Screenshot 4)
+- [x] No sensitive data exposed
 
 ---
 
