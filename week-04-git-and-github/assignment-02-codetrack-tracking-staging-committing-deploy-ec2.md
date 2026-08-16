@@ -164,13 +164,13 @@ Install and start Nginx on your EC2 instance, then copy `index.html` and `style.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[LinkedIn Post](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_dmi-devops-micro-internship-with-agentic-share-7494885589561843712-M_8B/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY)
 
 ---
 
 #### Screenshot — LinkedIn post showing the deployed CodeTrack application
 
-Add your screenshot here.
+![Screenshot 16](./screenshots/week-04-git-and-github-for-devops-envineers-02-16.png)
 
 ---
 
