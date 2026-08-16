@@ -40,7 +40,7 @@ Create the two starter UI files inside `CodeTrack`.
 
 #### Screenshot 3 — Output of `ls` showing `index.html` and `style.css`
 
-![Screenshot 4](./screenshots/week-04-git-and-github-for-devops-envineers-02-03.png)
+![Screenshot 3](./screenshots/week-04-git-and-github-for-devops-envineers-02-03.png)
 
 ---
 
@@ -54,7 +54,7 @@ Copy the provided starter HTML and CSS content into your local `index.html` and 
 
 #### Screenshot 4 — Your editor showing the contents of `index.html` and `style.css`
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-04-git-and-github-for-devops-envineers-02-04.png)
 
 ---
 
@@ -68,13 +68,13 @@ Confirm both files show as untracked, then stage them individually with `git add
 
 #### Screenshot 5 — Output of `git status` showing both files as untracked
 
-Add your screenshot here.
+![Screenshot 5](./screenshots/week-04-git-and-github-for-devops-envineers-02-05.png)
 
 ---
 
 #### Screenshot 6 — Output of `git status` showing both files staged under "Changes to be committed"
 
-Add your screenshot here.
+![Screenshot 6](./screenshots/week-04-git-and-github-for-devops-envineers-02-06.png)
 
 ---
 
@@ -88,13 +88,13 @@ Commit the staged starter files using the message `Initial UI scaffold: add inde
 
 #### Screenshot 7 — Output of `git commit`
 
-Add your screenshot here.
+![Screenshot 7](./screenshots/week-04-git-and-github-for-devops-envineers-02-07.png)
 
 ---
 
 #### Screenshot 8 — Output of `git log --oneline` showing the first commit
 
-Add your screenshot here.
+![Screenshot 8](./screenshots/week-04-git-and-github-for-devops-envineers-02-08.png)
 
 ---
 
@@ -108,25 +108,25 @@ Follow the instruction comment inside `index.html` to update the Student Name an
 
 #### Screenshot 9 — Browser showing the updated page with your Student Name and Group Name visible
 
-Add your screenshot here.
+![Screenshot 9](./screenshots/week-04-git-and-github-for-devops-envineers-02-09.png)
 
 ---
 
 #### Screenshot 10 — Output of `git status` showing `index.html` as modified
 
-Add your screenshot here.
+![Screenshot 10](./screenshots/week-04-git-and-github-for-devops-envineers-02-10.png)
 
 ---
 
 #### Screenshot 11 — Output of `git commit`
 
-Add your screenshot here.
+![Screenshot 11](./screenshots/week-04-git-and-github-for-devops-envineers-02-11.png)
 
 ---
 
 #### Screenshot 12 — Output of `git log --oneline` showing two commits
 
-Add your screenshot here.
+![Screenshot 12](./screenshots/week-04-git-and-github-for-devops-envineers-02-12.png)
 
 ---
 
