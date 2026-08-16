@@ -191,7 +191,7 @@ Paste your LinkedIn post URL here:
 - [x] Student Name and Group Name updated in `index.html` (Screenshot 9)
 - [x] Second controlled commit created (Screenshots 10–12)
 - [x] Nginx active on the EC2 instance and CodeTrack reachable via its public IP (Screenshots 13–15)
-- [ ] LinkedIn post published and URL submitted
+- [x] LinkedIn post published and URL submitted
 - [x] No sensitive data exposed
 
 ---
