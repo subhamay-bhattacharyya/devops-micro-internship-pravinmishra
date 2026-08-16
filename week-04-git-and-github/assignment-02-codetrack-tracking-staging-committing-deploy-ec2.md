@@ -20,13 +20,13 @@ Confirm that Git works and that you are inside the correct `CodeTrack` repositor
 
 #### Screenshot 1 — Output of `pwd` showing you're inside `CodeTrack`
 
-Add your screenshot here.
+![Screenshot 1](./screenshots/week-04-git-and-github-for-devops-envineers-02-01.png)
 
 ---
 
 #### Screenshot 2 — Output of `git status` showing no "not a git repository" error
 
-Add your screenshot here.
+![Screenshot 2](./screenshots/week-04-git-and-github-for-devops-envineers-02-02.png)
 
 ---
 
@@ -40,7 +40,7 @@ Create the two starter UI files inside `CodeTrack`.
 
 #### Screenshot 3 — Output of `ls` showing `index.html` and `style.css`
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-04-git-and-github-for-devops-envineers-02-03.png)
 
 ---
 
@@ -185,7 +185,7 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] `CodeTrack` repository verified with `git status` (Screenshots 1–2)
+- [x] `CodeTrack` repository verified with `git status` (Screenshots 1–2)
 - [ ] `index.html` and `style.css` created and populated (Screenshots 3–4)
 - [ ] Starter files staged and committed in the first commit (Screenshots 5–8)
 - [ ] Student Name and Group Name updated in `index.html` (Screenshot 9)
