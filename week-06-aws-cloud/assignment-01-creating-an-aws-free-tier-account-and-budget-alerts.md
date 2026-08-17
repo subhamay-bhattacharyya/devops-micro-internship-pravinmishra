@@ -30,7 +30,7 @@ In the Billing Dashboard, create a monthly Cost Budget with a name, amount, and 
 
 #### Screenshot 1 — AWS Budget setup page showing the budget name, budget amount, and alert thresholds
 
-Add your screenshot here.
+![Screenshot 1](./screenshots/week-06-aws-cloud-01-01.png)
 
 ---
 
@@ -40,7 +40,31 @@ Answer the following in your own words:
 
 **1. Why is it important to set up budget alerts when using an AWS account?**
 
-Write your answer here.
+Setting up budget alerts is important for several key reasons:
+
+#### Cost Visibility and Control
+
+Budget alerts give you real-time visibility into your AWS spending. Without them, you might not realize how much you're actually spending until your monthly bill arrives. Alerts allow you to catch excessive spending early and take corrective action before costs spiral.
+
+#### Preventing Bill Shock
+
+AWS charges based on usage, which means costs can grow unexpectedly if resources aren't managed properly. A development instance left running overnight, an unoptimized database query running continuously, or a data transfer you weren't anticipating can quickly add up. Alerts act as an early warning system.
+
+#### Identifying Resource Leaks
+
+A sudden spike in your bill often signals a problem—like an EC2 instance that wasn't terminated, an unattached EBS volume accumulating charges, or a database backup running repeatedly. Budget alerts prompt you to investigate these anomalies quickly.
+
+#### Enforcing Accountability
+
+In team environments, budget alerts create transparency around spending. When team members know there are spending thresholds and notifications, they're more likely to clean up unused resources and think carefully about their infrastructure choices.
+
+#### Supporting Business Planning
+
+By tracking spending patterns through alerts, you can better forecast future costs, understand which projects or departments consume the most resources, and make informed decisions about cloud investment and optimization efforts.
+
+#### Summary
+
+Budget alerts are a critical governance tool that helps you maintain cost discipline, prevent surprises, and ensure your cloud infrastructure remains efficient and aligned with your business goals.
 
 ---
 
@@ -53,13 +77,13 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] AWS Free Tier account created and Basic Support Plan (Free) selected
-- [ ] Logged in to the AWS Management Console
-- [ ] Monthly Cost Budget created with name, amount, and start month
-- [ ] Budget alert thresholds and notification email configured
-- [ ] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
-- [ ] Notes question answered
-- [ ] No sensitive billing or account information exposed
+- [x] AWS Free Tier account created and Basic Support Plan (Free) selected
+- [x] Logged in to the AWS Management Console
+- [x] Monthly Cost Budget created with name, amount, and start month
+- [x] Budget alert thresholds and notification email configured
+- [x] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
+- [x] Notes question answered
+- [x] No sensitive billing or account information exposed
 
 ---
 
