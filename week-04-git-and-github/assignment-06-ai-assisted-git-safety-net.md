@@ -35,7 +35,14 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 
 **1. Why create a dedicated branch instead of doing this work on main?**
 
-Add your answer here.
+1. **Protects main** — keeps production-ready code stable
+2. **Enables code review** — PRs allow peer review before merging
+3. **Parallel work** — multiple developers can work simultaneously without conflicts
+4. **Easy rollback** — buggy code doesn't break main; just revert the PR
+5. **CI/CD automation** — automated testing and checks run on the branch before merge
+6. **Industry standard** — Git Flow/GitHub Flow best practice used everywhere
+
+**TL;DR:** Feature branches protect the main codebase, enable code review, support team collaboration, and integrate with CI/CD automation.
 
 ---
 
@@ -49,7 +56,7 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 #### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
 
-Add your screenshot here.
+![Screenshot 2](./screenshots/week-04-git-and-github-for-devops-engineers-06-02.png)
 
 ---
 
@@ -57,8 +64,14 @@ Add your screenshot here.
 
 **1. Why does this assignment use an obviously fake key instead of a real one?**
 
-Add your answer here.
+1. **Security & Safety** — prevents accidental exposure of real credentials that could compromise accounts
+2. **No Real Risk** — fake keys can't actually access production systems, even if leaked
+3. **Focus on Mechanics** — teaches the workflow and process without security concerns
+4. **Best Practices Training** — demonstrates how to *handle* secrets securely, regardless of whether they're real or fake
+5. **Testing Without Consequences** — allows you to practice and make mistakes in a safe sandbox environment
+6. **Prevents Accidents** — if the key gets committed to Git or shared, no actual damage occurs
 
+**TL;DR:** Fake keys let you learn secure secret management without risking real infrastructure or credentials.
 ---
 
 # Task 2 — Write a Real Git Pre-Commit Hook
@@ -71,13 +84,13 @@ Create a tracked, shareable pre-commit hook that blocks a commit containing secr
 
 #### Screenshot 2 — `hooks/pre-commit` open in VS Code showing the full script
 
-Add your screenshot here.
+![Screenshot 3](./screenshots/week-04-git-and-github-for-devops-engineers-06-03.png)
 
 ---
 
 #### Screenshot 3 — Output of `git config core.hooksPath` confirming it points to `hooks`
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-04-git-and-github-for-devops-engineers-06-04.png)
 
 ---
 
@@ -85,13 +98,35 @@ Add your screenshot here.
 
 **1. Why is `hooks/pre-commit` tracked in the repo instead of living only in `.git/hooks/`?**
 
-Add your answer here.
+Tracking hooks in the repo (vs. `.git/hooks/` only) ensures:
+
+- **Shared enforcement** — all team members get the same security rules, not just the one developer
+- **Version control** — hook changes are tracked, reviewed, and auditable via Git history
+- **Consistency** — prevents developers from accidentally disabling or using outdated hooks
+- **Documentation** — hooks are visible and documented as part of the codebase standards
+- **Setup automation** — installation scripts (like `setup.sh`) can reliably deploy hooks to everyone's `.git/hooks/` during onboarding
+
+`.git/hooks/` is local-only and not tracked; tracking hooks in `hooks/` makes them a shared team resource.
 
 ---
 
 **2. Compare this to `PreToolUse` from Week 2 Assignment 6. What does each one intercept, and what do they have in common?**
 
-Add your answer here.
+| Aspect | `pre-commit` hook | `PreToolUse` hook |
+|--------|------------------|------------------|
+| **Intercepts** | Git commits (before they hit the repo) | Tool/function calls in Claude Code (before execution) |
+| **Purpose** | Blocks commits with secrets, large files | Blocks Claude from using certain tools, accessing files, running dangerous commands |
+| **Outcome** | Commit rejected + error message | Tool execution denied + warning logged |
+
+**What they have in common:**
+
+- Both are **pre-action guards** that stop something before it happens
+- Both **scan for security issues** (secrets, dangerous operations)
+- Both are **policy enforcement** mechanisms
+- Both can **block and reject** violations
+- Both **protect the system** (repo vs. codebase/infrastructure)
+
+**Pattern:** Pre-hooks are validation gatekeepers—they sit at critical chokepoints and prevent harmful actions from completing.
 
 ---
 
@@ -105,7 +140,7 @@ Attempt to commit the staged file from Task 1 and show the hook rejecting it.
 
 #### Screenshot 4 — Terminal showing `git commit` rejected with the hook's "BLOCKED" message naming the exact file
 
-Add your screenshot here.
+![Screenshot 5](./screenshots/week-04-git-and-github-for-devops-engineers-06-05.png)
 
 ---
 
@@ -113,13 +148,39 @@ Add your screenshot here.
 
 **1. Which line in `hooks/pre-commit` matched your fake key, and why did it match?**
 
-Add your answer here.
+This line matched:
+
+```bash
+if git diff --cached -- "$file" | grep -qE 'AKIA[0-9A-Z]{16}|-----BEGIN (RSA|OPENSSH|PRIVATE) KEY-----'; then
+```
+
+The regex pattern `AKIA[0-9A-Z]{16}` matched the fake key because:
+
+- AWS Access Key IDs always start with `AKIA`
+- Followed by exactly 16 uppercase letters or digits
+- Your fake key (`AKIA` + `IOSFODNN7EXAMPLE`) fits this pattern perfectly
+- The hook doesn't validate if the key is real—it just detects the format
 
 ---
 
 **2. Could this hook have caught a poorly-named variable that stores a secret without the `AKIA` prefix? What does that tell you about the limits of a fixed rule like this?**
 
-Add your answer here.
+**No**, it couldn't catch it. For example:
+
+```bash
+password = "wJalrXUtnFEMI/K7MDENG+bPxRfiCYEXAMPLEKEY"  # AWS secret key, but no AKIA
+api_token = "sk_live_51234567890abcdef"  # Stripe key, no AKIA
+```
+
+**What this reveals about pattern-based detection:**
+
+- **Only catches known patterns** — secrets in non-standard formats slip through
+- **No semantic understanding** — can't tell if a variable name hints at a secret
+- **False negatives** — poorly-named variables bypass detection
+- **Requires multiple layers** — one regex rule is insufficient; needs entropy detection, context analysis, or manual review
+- **Trade-off** — strict patterns are fast but miss edge cases; looser patterns have more false positives
+
+**Lesson:** Pattern-based security is a first line of defense, not a complete solution. Combine it with code review, secret scanning tools (like `git-secrets`, `TruffleHog`), and developer discipline.
 
 ---
 
@@ -133,13 +194,13 @@ Create a manually invoked Claude Code skill that reads your staged changes and p
 
 #### Screenshot 5 — `SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no `Write`) and `disable-model-invocation: true`
 
-Add your screenshot here.
+![Screenshot 6](./screenshots/week-04-git-and-github-for-devops-engineers-06-06.png)
 
 ---
 
 #### Screenshot 6 — `/pr-ready` output while the risky file is still staged, showing it flagged the secret and/or debug statement
 
-Add your screenshot here.
+![Screenshot 7](./screenshots/week-04-git-and-github-for-devops-engineers-06-07.png)
 
 ---
 
@@ -147,13 +208,44 @@ Add your screenshot here.
 
 **1. Why does `/pr-ready` have `Bash` and `Read` but not `Write`?**
 
-Add your answer here.
+Write` is disabled because `/pr-ready` must never modify files or commit code. According to its constraints:
+
+- "Never run `git commit`, `git push`, or `gh pr create`"
+- "Never edit files"
+- "Your output is a draft for a human to review and use"
+
+`Bash` and `Read` are needed to:
+
+- `Bash` — run `git diff --cached` and `git status` to inspect staged changes
+- `Read` — view file contents for analysis
+- `Grep` — parse diffs for flags and issues
+
+`Write` would break the safety boundary. `/pr-ready` is a **read-only reviewer**, not an actor—it analyzes and drafts, then hands control back to the human.
 
 ---
 
 **2. The pre-commit hook and `/pr-ready` both looked at the same staged diff. Did they flag the same things? What did one catch that the other didn't?**
 
-Add your answer here.
+| Aspect | **pre-commit hook** | **/pr-ready agent** |
+|--------|------------------|------------------|
+| **Caught** | AWS keys (AKIA pattern), private key headers, oversized files | Secrets broadly, debug statements, TODO/FIXME, mixed concerns, missing notes |
+
+**What the hook caught that pr-ready didn't:**
+
+- File size violations (>1MB)
+- Specific patterns (AKIA format, key headers)
+- Binary/exact regex matching
+
+**What pr-ready caught that the hook didn't:**
+
+- Debug print statements (`console.log`, `echo`, `print()`)
+- TODO/FIXME comments left in code
+- Mixed unrelated concerns in one commit
+- Missing documentation or change notes
+- Broader credential-shaped patterns (not just AKIA)
+- **Human-readable context** — why it matters and risk assessment
+
+**Pattern:** The hook is **fast, automated enforcement**. `/pr-ready` is **intelligent semantic analysis** that explains *what* and *why*.
 
 ---
 
@@ -167,13 +259,13 @@ Remove the secret and debug statement, then prove both gates now pass clean.
 
 #### Screenshot 7 — `git commit` succeeding after the fix (no BLOCKED message)
 
-Add your screenshot here.
+![Screenshot 8](./screenshots/week-04-git-and-github-for-devops-engineers-06-08.png)
 
 ---
 
 #### Screenshot 8 — Second `/pr-ready` run showing a clean risk report and a drafted PR title + description
 
-Add your screenshot here.
+![Screenshot 9](./screenshots/week-04-git-and-github-for-devops-engineers-06-09.png)
 
 ---
 
@@ -181,7 +273,13 @@ Add your screenshot here.
 
 **1. What exactly did you change to satisfy the pre-commit hook?**
 
-Add your answer here.
+I removed two things:
+
+1. **Removed the API token** — This satisfied the secrets check. The pre-commit hook's regex pattern was scanning for credential-shaped strings (like `AKIA[0-9A-Z]{16}` for AWS keys). By deleting the fake API token, the hook no longer detected a potential secret and allowed the commit to proceed.
+
+2. **Removed the echo command** — This satisfied the debug statement check. The echo command was a debug print statement left in the code. While `/pr-ready` flags these as issues during review, the pre-commit hook doesn't explicitly block echo statements—removing it ensures the staged code is clean and production-ready, following best practices.
+
+**Why this matters:** The hook blocks commits with security risks (exposed credentials) and oversized files. Removing the token + echo command means the staged changes no longer contain obvious security issues or debug artifacts, so the hook approved the commit.
 
 ---
 
