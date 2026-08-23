@@ -309,19 +309,65 @@ Push your branch and open a real Pull Request, using `/pr-ready`'s drafted title
 
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
-Add your answer here.
+The `/pr-ready` skill's draft:
+
+**Title:** "Add Git safety validation hooks and PR readiness skill"
+
+**Description:** "Implements a pre-commit hook that blocks commits with hardcoded secrets, private keys, and oversized files. Also adds a restricted Claude Code skill (`/pr-ready`) that analyzes staged changes and drafts PR descriptions without modifying code."
+
+I made the following edits:
+
+- **Title:** Changed to "Add pre-commit security hooks and `/pr-ready` AI review skill" because the original was too generic. The new version immediately signals this is about *security* (hooks) and *AI review* (the skill), which reviewers need to understand upfront.
+
+- **Description — Expanded the "Why":** The AI draft explained *what* was built but not *why it matters*. I added context: "This workflow demonstrates layered safety checks: deterministic pattern matching (pre-commit) catches known risks like AWS keys and secrets, while AI-assisted analysis flags semantic issues (debug statements, TODO comments, mixed concerns) that pattern matching can't detect. Both layers must pass before a PR is opened."
+
+- **Description — Added "What to Review":** The AI draft didn't tell reviewers what to look for. I added: "Pay attention to: (1) the regex patterns in `hooks/pre-commit` — are they sufficient for your team's threat model? (2) the `/pr-ready` skill's flagging logic — does it catch the issues you care about? (3) whether this two-layer model fits your team's workflow."
+
+**Why these edits matter:**
+
+- The original draft was accurate but didn't emphasize the *learning outcome* (two layers are better than one)
+- Reviewers need to know this is an educational exercise, not production infrastructure
+- Adding "What to Review" makes it actionable — reviewers know exactly what to validate instead of guessing
 
 ---
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
-Add your answer here.
+Several problems could have occurred:
+
+1. **Incomplete context for reviewers** — The AI's draft didn't explain *why* both layers (hook + skill) are necessary. Without that context, reviewers might think "why not just use the hook?" and miss the core learning. This weakens the PR's educational value.
+
+2. **Misleading scope** — The original title ("Add Git safety validation hooks...") doesn't clearly signal that a restricted Claude Code skill is part of this change. A reviewer skimming the title might not realize AI tooling is involved, leading to surprise during review or incomplete evaluation of the skill's constraints.
+
+3. **Missed security assumptions** — The AI draft didn't state the threat model (e.g., "This hook catches AWS key patterns but not all credential types"). Blindly using it could give false confidence to team members who assume the hook covers secrets it doesn't actually detect.
+
+4. **No "What to Review" guidance** — Without pointing reviewers to specific things to validate (regex patterns, skill constraints, whether the two-layer model fits the workflow), reviewers might do a shallow pass, miss edge cases, and not give the feedback needed for improvement.
+
+5. **Tone mismatch** — The AI's description was neutral/technical. Depending on your team's style, it might have sounded overly formal or not aligned with your voice, making it feel like a PR written by someone who doesn't understand the codebase.
+
+**The bigger risk:** Unreviewed AI output can sound confident and coherent while being incomplete, inaccurate, or misaligned with what you actually intended. It's easy to trust it because it reads well — but that polish can mask gaps.
 
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
-Add your answer here.
+**My fork:** `subhamay-bhattacharyya/devops-micro-internship-pravinmishra` — my personal copy of the repo where I submit my weekly DMI assignments.
+
+**Upstream repository:** `pravinmishraaws/devops-micro-internship-pravinmishra` — the official shared class repo maintained by Pravin Mishra.
+
+**Why this PR must target my own fork:**
+
+1. **This is your assignment work, not a class contribution** — The pre-commit hook and `/pr-ready` skill are learning exercises for *this assignment*. They're not improvements to the shared courseware that benefit everyone in DMI Cohort 3.
+
+2. **Upstream is for shared resources only** — PRs to upstream should only add new assignments, fix bugs in existing assignments, or improve documentation for the whole cohort. Your practice code doesn't fit that bar.
+
+3. **A fork keeps the experiment isolated** — My fork is my sandbox. You can create branches, test ideas, and open PRs to my fork without cluttering the shared repo's history or PR queue.
+
+4. **Prevents merge conflicts and noise** — If everyone in DMI Cohort 3 opened PRs to upstream with their assignment solutions, the shared repo would have dozens of PRs that are never meant to merge. That defeats the purpose of upstream.
+
+5. **Maintains course integrity** — The upstream repo is the source of truth for assignments. Mixing student solutions into it would pollute that source and make it harder for future cohorts to use as a template.
+
+**In short:** My fork is my personal learning space; upstream is the shared course material. This assignment teaches you to build safety tooling, not to contribute to the course itself—so the PR stays in your fork.
 
 ---
 
