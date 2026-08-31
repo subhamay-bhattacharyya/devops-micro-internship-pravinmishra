@@ -34,7 +34,7 @@ Create the Epic `Polish DMI Website UI & Deploy` to group the website UI and dep
 
 #### Screenshot 2 — Backlog showing the Epic panel enabled and the Epic visible
 
-![Screenshot 1](./screenshots/week-05-devops-lifecycle-02-02.png)
+![Screenshot 2](./screenshots/week-05-devops-lifecycle-02-02.png)
 
 ---
 
@@ -48,13 +48,13 @@ Create all six required Stories (S1–S6) under the Epic, each with its descript
 
 #### Screenshot 3 — Backlog showing the Epic and all six Stories under it
 
-Add your screenshot here.
+![Screenshot 3](./screenshots/week-05-devops-lifecycle-02-03.png)
 
 ---
 
 #### Screenshot 4 — One opened Story showing its Story point estimate, acceptance criteria, and label
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-05-devops-lifecycle-02-04.png)
 
 ---
 
