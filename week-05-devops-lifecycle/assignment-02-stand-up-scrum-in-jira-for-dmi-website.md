@@ -68,13 +68,13 @@ Break down S2 (Primary button color refresh) and S4 (Footer with version and dat
 
 #### Screenshot 5 — S2 showing all four Sub-tasks
 
-Add your screenshot here.
+![Screenshot 5](./screenshots/week-05-devops-lifecycle-02-05.png)
 
 ---
 
 #### Screenshot 6 — S4 showing all four Sub-tasks
 
-Add your screenshot here.
+![Screenshot 6](./screenshots/week-05-devops-lifecycle-02-06.png)
 
 ---
 
@@ -88,7 +88,7 @@ Apply the `frontend` label to S1, S2, S3, S5, and S6, and the `devops` label to 
 
 #### Screenshot 7 — Backlog or Story details showing labels applied to at least two visible Stories
 
-Add your screenshot here.
+![Screenshot 7](./screenshots/week-05-devops-lifecycle-02-07.png)
 
 ---
 
@@ -102,13 +102,13 @@ Create a one-week Sprint, move two or three Stories into it (approximately 3–5
 
 #### Screenshot 8 — Sprint 1 before starting, showing the selected Stories and Story Points
 
-Add your screenshot here.
+![Screenshot 8](./screenshots/week-05-devops-lifecycle-02-08.png)
 
 ---
 
 #### Screenshot 9 — Active Sprint board showing the started Sprint and Sprint Goal
 
-Add your screenshot here.
+![Screenshot 9](./screenshots/week-05-devops-lifecycle-02-09.png)
 
 ---
 
