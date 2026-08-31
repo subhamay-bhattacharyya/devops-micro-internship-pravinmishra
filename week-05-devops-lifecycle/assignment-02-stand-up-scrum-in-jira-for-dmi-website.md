@@ -142,8 +142,7 @@ Locate the Burndown Chart for Sprint 1 so it is ready for later progress trackin
 
 #### Screenshot 12 — Burndown Chart page opened for Sprint 1
 
-Add your screenshot here.
-
+![Screenshot 12](./screenshots/week-05-devops-lifecycle-02-12.png)
 ---
 
 # Submission Instructions
@@ -156,16 +155,16 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Private team-managed Scrum project created with your name (Screenshot 1)
-- [ ] Task 2: Epic "Polish DMI Website UI & Deploy" created (Screenshot 2)
-- [ ] Task 3: All six Stories connected to the Epic, assigned to you, with descriptions/acceptance criteria/points/labels (Screenshots 3 & 4)
-- [ ] Task 4: Four Sub-tasks created under both S2 and S4 (Screenshots 5 & 6)
-- [ ] Task 5: Frontend and devops labels applied to all Stories (Screenshot 7)
-- [ ] Task 6: One-week Sprint 1 started with the required Sprint Goal (Screenshots 8 & 9)
-- [ ] Task 7: Frontend and devops filters demonstrated (Screenshots 10 & 11)
-- [ ] Task 8: Burndown Chart opened for Sprint 1 (Screenshot 12)
-- [ ] Full Name visible in required screenshots
-- [ ] No sensitive data exposed
+- [x] Task 1: Private team-managed Scrum project created with your name (Screenshot 1)
+- [x] Task 2: Epic "Polish DMI Website UI & Deploy" created (Screenshot 2)
+- [x] Task 3: All six Stories connected to the Epic, assigned to you, with descriptions/acceptance criteria/points/labels (Screenshots 3 & 4)
+- [x] Task 4: Four Sub-tasks created under both S2 and S4 (Screenshots 5 & 6)
+- [x] Task 5: Frontend and devops labels applied to all Stories (Screenshot 7)
+- [x] Task 6: One-week Sprint 1 started with the required Sprint Goal (Screenshots 8 & 9)
+- [x] Task 7: Frontend and devops filters demonstrated (Screenshots 10 & 11)
+- [x] Task 8: Burndown Chart opened for Sprint 1 (Screenshot 12)
+- [x] Full Name visible in required screenshots
+- [x] No sensitive data exposed
 
 ---
 
