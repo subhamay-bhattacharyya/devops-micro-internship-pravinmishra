@@ -144,19 +144,19 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Screenshot 15 — Burndown Chart for Sprint 1
 
-Add your screenshot here.
+![Screenshot 15](./screenshots/week-05-devops-lifecycle-03-15.jpg)
 
 ---
 
 #### Screenshot 16 — Jira retrospective comment
 
-Add your screenshot here.
+![Screenshot 16](./screenshots/week-05-devops-lifecycle-03-16.jpg)
 
 ---
 
 #### Screenshot 17 — Final EC2 browser view showing the complete footer requirement
 
-Add your screenshot here.
+![Screenshot 17](./screenshots/week-05-devops-lifecycle-03-17.jpg)
 
 ---
 
@@ -164,7 +164,7 @@ Add your screenshot here.
 
 Paste your unlisted YouTube or accessible Google Drive demo-video link here:
 
-`Add your URL here`
+[Demo Video](https://drive.google.com/file/d/1z6SHdkRnD7iS1tkNM3iWftqEdFCN6A37/view)
 
 ---
 
