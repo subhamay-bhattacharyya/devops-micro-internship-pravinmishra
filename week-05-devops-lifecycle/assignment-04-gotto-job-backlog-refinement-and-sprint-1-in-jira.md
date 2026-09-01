@@ -20,7 +20,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 #### Screenshot 1 — Jira "Create project" screen, or the project sidebar after creation
 
-![Screenshot 1](./screenshots/week-05-devops-lifecycle-04-01.png)
+![Screenshot 1](./screenshots/week-05-devops-lifecycle-04-01.jpg)
 
 ---
 
@@ -48,7 +48,7 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-![Screenshot 2](./screenshots/week-05-devops-lifecycle-04-02.png)
+![Screenshot 2](./screenshots/week-05-devops-lifecycle-04-02.jpg)
 
 ---
 
@@ -62,7 +62,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-![Screenshot 4](./screenshots/week-05-devops-lifecycle-04-03.png)
+![Screenshot 4](./screenshots/week-05-devops-lifecycle-04-03.jpg)
 
 ---
 
