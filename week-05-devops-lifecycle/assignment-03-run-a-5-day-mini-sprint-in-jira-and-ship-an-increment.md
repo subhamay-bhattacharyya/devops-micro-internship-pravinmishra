@@ -130,7 +130,7 @@ Replace the existing homepage tagline with the required DMI Discord call-to-acti
 
 #### Screenshot 14 — EC2 browser view showing "Join DMI Cohort 3 on Discord and start your DevOps journey"
 
-Add your screenshot here.
+![Screenshot 14](./screenshots/week-05-devops-lifecycle-03-14.jpg)
 
 ---
 
