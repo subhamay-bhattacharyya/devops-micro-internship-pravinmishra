@@ -180,13 +180,13 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[LinkedIn Post](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_devops-continuousdelivery-agile-activity-7500650589127753728-VJSD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY)
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the required links and proof image
 
-Add your screenshot here.
+![Screenshot 18](./screenshots/week-05-devops-lifecycle-03-18.jpg)
 
 ---
 
