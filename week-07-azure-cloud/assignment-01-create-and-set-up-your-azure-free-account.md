@@ -10,21 +10,21 @@ In this assignment, you will set up a fully functional Microsoft Azure Free Acco
 
 ---
 
-# Task 1 — Create Your Azure Free Account
+# Task 1 — 4 Create and Set Up Your Azure Free Account
 
 ## Goal
 
-Sign up at the official Azure Free Account page, complete identity and phone verification, provide payment verification, and accept the Microsoft Agreement and Offer Terms.
+Complete the Azure Free Account registration process, including Microsoft account sign-in, personal details, identity and phone verification, payment verification, and acceptance of the required terms.
 
 > No screenshot required for this task. Do not capture payment-card details. Completion is verified through Task 2.
 
 ---
 
-# Task 2 — Access and Explore the Azure Portal
+# Task 5 — Access and Explore the Azure Portal
 
 ## Goal
 
-Sign in to the Azure Portal, locate key services (Resource Groups, Virtual Machines, Storage, App Services), and confirm the Free Trial subscription is shown under Subscriptions.
+Confirm successful Azure Portal access and Locate the required services and subscription.
 
 ### Evidence
 

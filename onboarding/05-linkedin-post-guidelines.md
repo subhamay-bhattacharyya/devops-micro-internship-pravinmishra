@@ -36,22 +36,18 @@ You must tag **Pravin Mishra**, your **Lead Co-Mentor** and your **Group Co-Ment
 
 **Group 1**
 
-* Nkechi Ahanonye [Linkedin profile](https://www.linkedin.com/in/nkechiahanonye/)
 * Tanisha Borana [Linkedin profile](https://www.linkedin.com/in/tanisha-borana-552797233/)
 * Anuradha Iyer [Linkedin profile](https://www.linkedin.com/in/iyeranuradha/)
 
 **Group 2**
 
 * Anjana Muthunayake [Linkedin profile](https://www.linkedin.com/in/anjana-muthunayake/)
-* Faith Samson [Linkedin profile](https://www.linkedin.com/in/faith-samson-nigo/)
 * Joy Ukpabi [Linkedin profile](https://www.linkedin.com/in/joyukpabi/)
-* Rukevwe Ubioworo [Linkedin profile](https://www.linkedin.com/in/ubioworoisaiah/)
 
 **Group 3**
 
 * Bhupendra Bhati [Linkedin profile](https://www.linkedin.com/in/bhupendrabhati/)
 * Ranbir Kaur [Linkedin profile](https://www.linkedin.com/in/ranbirkaur/)
-* Greg Odi [Linkedin profile](https://www.linkedin.com/in/gregodi/)
 
 ---
 

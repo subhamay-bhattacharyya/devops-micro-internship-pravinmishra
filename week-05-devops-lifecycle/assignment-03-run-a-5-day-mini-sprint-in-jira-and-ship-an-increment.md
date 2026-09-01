@@ -34,7 +34,7 @@ Create the footer Story (`Add footer with version and deploy date`, 1 point, `fr
 
 ## Goal
 
-Add the required footer text (`Portfolio v1.0 — Deployed on <DD Mon YYYY> — By <Student Name>`) to the site on a `feature/footer-v1` branch, commit it, and deploy it to the public EC2 URL.
+Add the required footer text (`Pravin Mishra Portfolio v1.0 — Deployed on <DD Mon YYYY> — By <Student Name>`) to the site on a `feature/footer-v1` branch, commit it, and deploy it to the public EC2 URL.
 
 ### Evidence
 
@@ -70,7 +70,7 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 ### Evidence
 
-#### Screenshot 7 — Code editor showing the footer and date logic
+#### Screenshot 7 — Code editor showing the footer and date logic or deployment-time template snippet
 
 ![Screenshot 7](./screenshots/week-05-devops-lifecycle-03-07.png)
 
@@ -124,11 +124,11 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 ## Goal
 
-Replace the existing homepage tagline with the required DMI Discord call-to-action link and deploy it to EC2.
+Replace the existing homepage tagline with the required DMI Website call-to-action link and deploy it to EC2.
 
 ### Evidence
 
-#### Screenshot 14 — EC2 browser view showing "Join DMI Cohort 3 on Discord and start your DevOps journey"
+#### Screenshot 14 — EC2 browser view showing "Start your DevOps Journey here" and the clickable "Visit the DMI Website" link
 
 ![Screenshot 14](./screenshots/week-05-devops-lifecycle-03-14.jpg)
 
@@ -184,7 +184,7 @@ Paste your LinkedIn post URL here:
 
 ---
 
-#### Screenshot — Published LinkedIn post showing the required links and proof image
+#### LinkedIn Screenshot 1 — Published LinkedIn post showing the post content and at least one required link or proof image
 
 ![Screenshot 18](./screenshots/week-05-devops-lifecycle-03-18.jpg)
 
@@ -192,8 +192,11 @@ Paste your LinkedIn post URL here:
 
 # Submission Instructions
 
-- Add all required screenshots in your submission
+- Add all 17 assignment screenshots in the specified order
+- Add LinkedIn Screenshot 1
 - Full name must be visible in required screenshots
+- Include your two-to-three-minute demo-video URL
+- Include Daily Scrum comments for Days 1–5 and the retrospective comment
 - Include your GitHub repository URL and public EC2 live URL
 - Do not expose sensitive information (private keys, passwords, tokens, account IDs)
 
@@ -201,6 +204,7 @@ Paste your LinkedIn post URL here:
 
 # Completion Checklist
 
+<<<<<<< HEAD
 - [x] Task 1: Sprint 1 started with the required Sprint Goal (Screenshots 1 & 2)
 - [x] Task 2: Day 1 footer implemented, committed, and deployed (Screenshots 3–6)
 - [x] Task 3: Day 2 deploy date made dynamic and documented (Screenshots 7–10)
@@ -211,6 +215,19 @@ Paste your LinkedIn post URL here:
 - [x] LinkedIn post published and URL submitted
 - [x] Full Name visible in required screenshots
 - [x] No sensitive data exposed
+=======
+- [ ] Task 1: Sprint 1 started with the required Sprint Goal (Screenshots 1 & 2)
+- [ ] Task 2: Day 1 footer implemented, committed, and deployed (Screenshots 3–6)
+- [ ] Task 3: Day 2 deploy date made dynamic and documented (Screenshots 7–10)
+- [ ] Task 4: Day 3 footer polished and validated on desktop and mobile (Screenshots 11–13)
+- [ ] Task 5: Day 4 DMI Website call-to-action deployed and clickable (Screenshot 14)
+- [ ] Task 6: Day 5 demo, retrospective, and Burndown evidence completed (Screenshots 15–17, video URL)
+- [ ] Daily Scrum comments posted for Days 1–5
+- [ ] LinkedIn post published with the GitHub URL, EC2 URL, required delivery details, and proof image
+- [ ] LinkedIn Post URL and LinkedIn Screenshot 1 included
+- [ ] Full Name visible in required screenshots
+- [ ] No sensitive data exposed
+>>>>>>> upstream/main
 
 ---
 

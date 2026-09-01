@@ -1,4 +1,4 @@
-# DEVOPS MICRO INTERNSHIP COHORT 3 - ALL REQUIRED LINKS - THE CLOUD ADVISORY
+# DEVOPS MICRO INTERNSHIP - ALL REQUIRED LINKS - THE CLOUD ADVISORY
 
 ---
 
@@ -16,23 +16,61 @@
 
 ## [Cohort-3 Leaderboard - LIVE](https://dmi.pravinmishra.com/leaderboard.html?utm_source=github&utm_medium=readme)
 
+## [Self-Phased Track Leaderboard](https://dmi.pravinmishra.com/self-paced-leaderboard.html?utm_source=github&utm_medium=readme)
+
 ---
 
 ## IMPORTANT FOR LINKEDIN AND BLOG POSTS - Always add the below line and the hashtags
 
+Use the P.S. line for **your track**.
+
+| Track |
+|-------|
+| Cohort 3 (Live) |
+| DMI-Foundation Track |
+| DMI-Self-Paced Engineer Track |
+
+### Cohort 3 (Live) Track
+
 **For LinkedIn posts:**
 
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: `https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html` · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
 
 **For blog posts:**
 
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3**
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: `https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html` · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3**
+
+### DMI-Foundation Track
+
+**For LinkedIn posts:**
+
+> **P.S. This post is part of the DevOps Micro Internship (DMI) — Foundation Track — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: `https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html` · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=foundation**
+
+**For blog posts:**
+
+> **P.S. This post is part of the DevOps Micro Internship (DMI) — Foundation Track — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: `https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html` · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=foundation**
+
+**Tag [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) in your LinkedIn post.**
+
+### DMI-Self-Paced Engineer Track
+
+**For LinkedIn posts:**
+
+> **P.S. This post is part of the DevOps Micro Internship (DMI) — Self-Paced Engineer Track — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: `https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html` · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=self-paced**
+
+**For blog posts:**
+
+> **P.S. This post is part of the DevOps Micro Internship (DMI) — Self-Paced Engineer Track — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: `https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html` · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=self-paced**
+
+**Tag [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) in your LinkedIn post.**
 
 Replace `YOUR-GITHUB-USERNAME` with your GitHub username — that link is your public DMI progress page (your graded badge page).
 
 #DMIByPravinMishra 
 
-### Tag 'Pravin Mishra', 'Lead Co mentor' & your group's co comentors to your LinkedIn post.
+---
+
+### Tag 'Pravin Mishra', 'Lead Co mentor' & your group's co comentors to your LinkedIn post. (Cohort 3 Live track students)
 
 Pravin Mishra [Linkedin profile](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
 
@@ -250,3 +288,235 @@ Week-4 is **5 assignment files**, each graded pass/fail — your blog post for t
 | — | LinkedIn post | 10 |
 | — | Blog post | 30 |
 | **Total** | | **160** |
+
+---
+
+## Week-5 — DevOps Lifecycle & Agile
+
+| S. No. | Item                   | Comments                                                | Link                                 |
+| ------ | ---------------------- | ------------------------------------------------------- | ------------------------------------ |
+| 1      | Week-5 Class Recording | Watch the recording of the Week-5 live class on YouTube | [YouTube](https://youtube.com/live/SQm6Lu4UEVU?feature=share) |
+
+---
+
+### Week 5: Assignments Submission Guidelines – DevOps Micro Internship (DMI) Cohort-3
+
+* **Deadline - Friday, 7th of August 11:59 PM (your local time)**
+
+Week-5 is **5 assignment files**, each graded pass/fail — your blog post for the week is scored separately below; it is not a 6th assignment file:
+
+| Assignment   | Name                                                  |  Points |
+| ------------ | ----------------------------------------------------- | :-----: |
+| Assignment-1 | Create Your Jira Account and Set Up Your Profile      |    20   |
+| Assignment-2 | Stand Up Scrum in Jira for the DMI Website            |    20   |
+| Assignment-3 | Run a 5-Day Mini-Sprint in Jira and Ship an Increment |    20   |
+| Assignment-4 | Gotto Job: Backlog Refinement and Sprint 1 in Jira    |    20   |
+| Assignment-5 | AI-Assisted Sprint Health Report via Jira MCP         |    20   |
+| —            | LinkedIn post                                         |    10   |
+| —            | Blog post                                             |    30   |
+| **Total**    |                                                       | **140** |
+
+---
+
+## Week-6 — AWS Cloud
+
+| S. No. | Item | Comments | Link |
+|--------|------|----------|------|
+| 1 | Week-6 Class Recording | Watch the recording of the Week-6 live class on YouTube | [YouTube](https://youtube.com/live/SoaH4FOXjqU?feature=share) |
+
+---
+
+### Week 6: Assignments Submission Guidelines – DevOps Micro Internship (DMI) Cohort-3
+
+* **Deadline - 14 August 2026**
+
+Week-6 is **7 assignment files**, each graded pass/fail — your LinkedIn post and blog post for the week are scored separately below:
+
+| Assignment | Name | Points |
+|------------|------|:------:|
+| Assignment-1 | Creating an AWS Free Tier Account and Budget Alerts | 20 |
+| Assignment-2 | Deploy Personal Portfolio Website on S3 | 20 |
+| Assignment-3 | Deploy Mini Finance Website on AWS Virtual Machine | 20 |
+| Assignment-4 | Deploy EpicBook on Ubuntu VM and MySQL RDS | 20 |
+| Assignment-5 | Deploy a Highly Available Two-Tier Application on AWS | 20 |
+| Assignment-6 | Capstone: Deploy Book Review App — Three-Tier Architecture on AWS | 20 |
+| Assignment-7 | AI-Assisted AWS Security and Cost Audit | 20 |
+| — | LinkedIn post | 10 |
+| — | Blog post | 30 |
+| **Total** | | **180** |
+
+---
+
+## Week-7 — Azure Cloud
+
+| S. No. | Item | Comments | Link |
+|--------|------|----------|------|
+| 1 | Week-7 Class Recording | Watch the recording of the Week-7 live class on YouTube | [YouTube](https://youtube.com/live/jbTUpiM3zBQ?feature=share) |
+
+---
+
+### Week 7: Assignments Submission Guidelines – DevOps Micro Internship (DMI) Cohort-3
+
+* **Deadline - 21 August 2026**
+
+Week-7 is **7 assignment files**, each graded pass/fail — your LinkedIn post and blog post for the week are scored separately below:
+
+| Assignment | Name | Points |
+|------------|------|:------:|
+| Assignment-1 | Create and Set Up Your Azure Free Account | 20 |
+| Assignment-2 | Deploy a React App on an Azure VM | 20 |
+| Assignment-3 | Design a Three-Tier Network with Load Balancer on Azure | 20 |
+| Assignment-4 | Host a Static Website on Azure Storage | 20 |
+| Assignment-5 | Deploy EpicBook Web App on Azure VM with MySQL | 20 |
+| Assignment-6 | Deploy Book Review App — Three-Tier Architecture on Azure | 20 |
+| Assignment-7 | AI-Assisted Azure Security Posture Audit | 20 |
+| — | LinkedIn post | 10 |
+| — | Blog post | 30 |
+| **Total** | | **180** |
+
+---
+
+## Week-8 — Terraform
+
+| S. No. | Item | Comments | Link |
+|--------|------|----------|------|
+| 1 | Week-8 Class Recording | Watch the recording of the Week-8 live class on YouTube | [YouTube](https://youtube.com/live/QOqrfVFacpc?feature=share) |
+
+---
+
+### Week 8: Assignments Submission Guidelines – DevOps Micro Internship (DMI) Cohort-3
+
+* **Deadline - 04 September 2026**
+
+Week-8 is **6 assignment files**, each graded pass/fail — your LinkedIn post and blog post for the week are scored separately below:
+
+| Assignment | Name | Points |
+|------------|------|:------:|
+| Assignment-1 | Create an Azure Virtual Machine Using Terraform | 20 |
+| Assignment-2 | Deploy a Virtual Machine on AWS with Public Network Using Terraform | 20 |
+| Assignment-3 | Deploy a React Application on Azure Virtual Machine Using Terraform | 20 |
+| Assignment-4 | Deploy EpicBook Application on AWS Using Terraform | 20 |
+| Assignment-5 | Deploy Book Review App in Your Favorite Cloud — Agentic Terraform Project | 20 |
+| Assignment-6 | AI-Assisted Terraform Drift and Policy Review | 20 |
+| — | LinkedIn post | 10 |
+| — | Blog post | 30 |
+| **Total** | | **160** |
+
+---
+
+## Week-9 — Ansible
+
+| S. No. | Item | Comments | Link |
+|--------|------|----------|------|
+| 1 | Week-9 Class Recording | Watch the recording of the Week-9 live class on YouTube | - |
+
+---
+
+### Week 9: Assignments Submission Guidelines – DevOps Micro Internship (DMI) Cohort-3
+
+* **Deadline - __**
+
+Week-9 is **6 assignment files**, each graded pass/fail — your LinkedIn post and blog post for the week are scored separately below:
+
+| Assignment | Name | Points |
+|------------|------|:------:|
+| Assignment-1 | Onboarding: Workstation Setup, Standards, and AI | 20 |
+| Assignment-2 | Ad-Hoc Automation on Azure — 4 VMs, Inventory, and Passwordless SSH | 20 |
+| Assignment-3 | Multi-Play Web Deploy on Azure | 20 |
+| Assignment-4 | Deploy Mini Finance Project Using Terraform and Ansible | 20 |
+| Assignment-5 | Production-Grade EpicBook — Terraform and Ansible Roles | 20 |
+| Assignment-6 | AI-Assisted Ansible Change Risk Review | 20 |
+| — | LinkedIn post | 10 |
+| — | Blog post | 30 |
+| **Total** | | **160** |
+
+---
+
+## Week-10 — Azure DevOps
+
+| S. No. | Item | Comments | Link |
+|--------|------|----------|------|
+| 1 | Week-10 Class Recording | Watch the recording of the Week-10 live class on YouTube | - |
+
+---
+
+### Week 10: Assignments Submission Guidelines – DevOps Micro Internship (DMI) Cohort-3
+
+* **Deadline - __**
+
+Week-10 is **5 assignment files**, each graded pass/fail — your LinkedIn post and blog post for the week are scored separately below:
+
+| Assignment | Name | Points |
+|------------|------|:------:|
+| Assignment-1 | Set Up a Self-Hosted Linux Agent for Azure DevOps | 20 |
+| Assignment-2 | Deploy Mini Finance Project via Azure DevOps Pipeline | 20 |
+| Assignment-3 | Deploy React Application with Azure DevOps Pipeline | 20 |
+| Assignment-4 | Capstone: Automate the EpicBook Application with Dual Pipelines | 20 |
+| Assignment-5 | AI-Assisted CI/CD Pipeline Failure Triage | 20 |
+| — | LinkedIn post | 10 |
+| — | Blog post | 30 |
+| **Total** | | **140** |
+
+---
+
+## Week-11 — Docker
+
+| S. No. | Item | Comments | Link |
+|--------|------|----------|------|
+| 1 | Week-11 Class Recording | Watch the recording of the Week-11 live class on YouTube | - |
+
+---
+
+### Week 11: Assignments Submission Guidelines – DevOps Micro Internship (DMI) Cohort-3
+
+* **Deadline - __**
+
+Week-11 is **7 assignment files**, each graded pass/fail — your LinkedIn post and blog post for the week are scored separately below:
+
+| Assignment | Name | Points |
+|------------|------|:------:|
+| Assignment-1 | Deploy a Static Website on a Cloud VM Using Docker | 20 |
+| Assignment-2 | Multi-Stage Docker Build for a React Application | 20 |
+| Assignment-3 | Docker Networking | 20 |
+| Assignment-4 | Docker Volumes | 20 |
+| Assignment-5 | Sharing the Docker Container on Docker Hub | 20 |
+| Assignment-6 | Capstone: Deploy a Production-Grade Stack for EpicBook | 20 |
+| Assignment-7 | AI-Assisted Docker Container Hardening Audit | 20 |
+| — | LinkedIn post | 10 |
+| — | Blog post | 30 |
+| **Total** | | **180** |
+
+---
+
+## Week-12 — Kubernetes
+
+| S. No. | Item | Comments | Link |
+|--------|------|----------|------|
+| 1 | Week-12 Class Recording | Watch the recording of the Week-12 live class on YouTube | - |
+
+---
+
+### Week 12: Assignments Submission Guidelines – DevOps Micro Internship (DMI) Cohort-3
+
+* **Deadline - __**
+
+Week-12 is **11 assignment files**, each graded pass/fail — your LinkedIn post and blog post for the week are scored separately below:
+
+| Assignment | Name | Points |
+|------------|------|:------:|
+| Assignment-1 | Creating Your First Pod in Kubernetes | 20 |
+| Assignment-2 | ReplicaSets — Keeping Your Pods Alive | 20 |
+| Assignment-3 | Deployments — From Basics to Rolling Updates | 20 |
+| Assignment-4 | Auto-Scaling and Auto-Healing | 20 |
+| Assignment-5 | Kubernetes Health Probes — Readiness | 20 |
+| Assignment-6 | Kubernetes Health Probes — Liveness | 20 |
+| Assignment-7 | Kubernetes Services — ClusterIP | 20 |
+| Assignment-8 | Kubernetes Services — NodePort | 20 |
+| Assignment-9 | Kubernetes Services — LoadBalancer | 20 |
+| Assignment-10 | Deploy the Book Review App to Kubernetes | 20 |
+| Assignment-11 | AI-Assisted Kubernetes Incident Triage | 20 |
+| — | LinkedIn post | 10 |
+| — | Blog post | 30 |
+| **Total** | | **260** |
+
+---

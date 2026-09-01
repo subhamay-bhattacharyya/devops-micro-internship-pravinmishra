@@ -1,4 +1,4 @@
-# Assignment 6 — Capstone: Deploy Book Review App (Three-Tier Architecture) on AWS
+# Assignment 6 — Capstone Assignment — Deploy Book Review App (Three-Tier Architecture) on AWS
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
@@ -38,7 +38,7 @@ Write your answer here.
 
 ---
 
-**Services used:**
+**Services:**
 
 Write your answer here.
 
@@ -68,37 +68,37 @@ Capture visual proof of every tier and load balancer.
 
 ### Evidence
 
-#### Screenshot 1 — Web Tier EC2 instance in a public subnet
+#### Web EC2
 
 Add your screenshot here.
 
 ---
 
-#### Screenshot 2 — App Tier EC2 instance in a private subnet
+#### App EC2
 
 Add your screenshot here.
 
 ---
 
-#### Screenshot 3 — Public Application Load Balancer configuration or healthy targets
+#### Public ALB
 
 Add your screenshot here.
 
 ---
 
-#### Screenshot 4 — Internal Application Load Balancer configuration or healthy targets
+#### Internal ALB
 
 Add your screenshot here.
 
 ---
 
-#### Screenshot 5 — Amazon RDS for MySQL showing Multi-AZ and the read replica
+#### RDS + Replica
 
 Add your screenshot here.
 
 ---
 
-#### Screenshot 6 — Book Review App UI working through the public ALB
+#### App UI proof
 
 Add your screenshot here.
 
@@ -118,7 +118,7 @@ Write your answer here.
 
 ---
 
-**Issues encountered and fixes:**
+**Issues + fixes:**
 
 Write your answer here.
 
@@ -146,7 +146,7 @@ Paste your LinkedIn post URL here:
 
 ---
 
-#### Screenshot — Published LinkedIn post
+#### Screenshot of LinkedIn post
 
 Add your screenshot here.
 

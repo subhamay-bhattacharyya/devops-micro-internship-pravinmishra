@@ -48,7 +48,9 @@ Start the web server and confirm the Mini Finance website is accessible through 
 
 ### Evidence
 
-#### Screenshot 1 — Browser showing the Mini Finance website running at the EC2 public IP
+### Screenshots Required
+
+Take one screenshot showing the Mini Finance website running in the browser.
 
 Add your screenshot here.
 

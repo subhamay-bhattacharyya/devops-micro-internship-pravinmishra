@@ -1,4 +1,4 @@
-# Assignment 5 — Deploy a Highly Available Two-Tier Application on AWS
+# Assignment 5 — Deploy a Highly Available Two-Tier Application on AWS (VPC + ALB + ASG + Multi-AZ RDS)
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
@@ -108,7 +108,7 @@ Add your screenshot here.
 
 ---
 
-#### Screenshot 12 — A running instance created from the template showing the application responds on port 80
+#### Screenshot 12 — A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP
 
 Add your screenshot here.
 
@@ -178,11 +178,13 @@ Add your screenshot here.
 
 ## Goal
 
-Test A: terminate one web instance and confirm the Auto Scaling Group replaces it automatically without interrupting the ALB. Test B: simulate an Availability Zone impact (stop, detach, or reduce desired capacity in one AZ) and confirm the application stays available.
+Test A: terminate one web instance and confirm the Auto Scaling Group replaces it automatically without interrupting the ALB.
+
+Test B: simulate an Availability Zone impact (stop, detach, or reduce desired capacity in one AZ) and confirm the application stays available.
 
 ### Evidence
 
-#### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance
+#### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance; timestamps are helpful
 
 Add your screenshot here.
 
@@ -214,7 +216,7 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 ### Evidence
 
-#### Screenshot 23 — A simple architecture diagram (hand-drawn is fine), or an AWS console overview showing the components
+#### Screenshot 23 — A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components
 
 Add your screenshot here.
 
@@ -222,7 +224,19 @@ Add your screenshot here.
 
 ### Notes
 
-Write a short summary covering the network, ALB/ASG setup, RDS setup, and the results of Test A and Test B.
+Summarize the VPC and subnets across the two Availability Zones.
+
+Write your answer here.
+
+Summarize the ALB and Auto Scaling Group setup.
+
+Write your answer here.
+
+Summarize the private Multi-AZ RDS setup.
+
+Write your answer here.
+
+Summarize the results of both high-availability tests.
 
 Write your answer here.
 
@@ -244,7 +258,7 @@ Paste your LinkedIn post URL here:
 
 ---
 
-#### Screenshot — Published LinkedIn post
+#### Screenshot of LinkedIn post
 
 Add your screenshot here.
 
