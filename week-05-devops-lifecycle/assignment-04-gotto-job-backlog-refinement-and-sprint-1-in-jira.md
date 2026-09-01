@@ -20,7 +20,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 #### Screenshot 1 — Jira "Create project" screen, or the project sidebar after creation
 
-Add your screenshot here.
+![Screenshot 1](./screenshots/week-05-devops-lifecycle-04-01.png)
 
 ---
 
@@ -28,7 +28,13 @@ Add your screenshot here.
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+**PO:** Prioritized user-facing improvements that demonstrate DevOps visibility—enhanced footer with deployment metadata, dynamic timestamp display showing release information, and a clear call-to-action linking users to the DMI community.
+
+**SM:** Ensured process discipline by maintaining daily standups in the required format (Yesterday/Today/Blockers), enforcing a 4-day sprint cadence with clear task completion criteria, tracking blockers (none encountered), and conducting a sprint retrospective to capture learnings and identify continuous improvements.
+
+**Dev Lead:** Built the feature/footer-v1 branch with responsive footer enhancements, implemented JavaScript-based timestamp functionality using toLocaleDateString() and toLocaleTimeString() APIs for dynamic date display, updated the footer stylesheet with unique brand-aligned colors, and replaced the homepage tagline with a compelling DMI Website call-to-action.
+
+**DevOps Lead:** Shipped four features to EC2 production within four days by deploying after each meaningful change, validated each deployment through cross-browser testing (Chrome, Firefox, Safari), verified Nginx functionality and production URL accessibility, and maintained zero production incidents while enabling rapid iteration cycles.
 
 ---
 
@@ -42,7 +48,7 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-Add your screenshot here.
+![Screenshot 2](./screenshots/week-05-devops-lifecycle-04-02.png)
 
 ---
 
@@ -56,7 +62,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-05-devops-lifecycle-04-03.png)
 
 ---
 
