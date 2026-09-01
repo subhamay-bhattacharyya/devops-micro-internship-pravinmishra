@@ -62,7 +62,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-![Screenshot 4](./screenshots/week-05-devops-lifecycle-04-03.jpg)
+![Screenshot 3](./screenshots/week-05-devops-lifecycle-04-03.jpg)
 
 ---
 
@@ -76,13 +76,13 @@ Create at least six Stories under the Epic, estimate each with 1, 2, or 3 story 
 
 #### Screenshot 4 — Backlog showing the Epic and at least six Stories under it
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-05-devops-lifecycle-04-04.jpg)
 
 ---
 
 #### Screenshot 5 — One Story opened showing its Story Points and acceptance criteria filled in
 
-Add your screenshot here.
+![Screenshot 5](./screenshots/week-05-devops-lifecycle-04-05.jpg)
 
 ---
 
