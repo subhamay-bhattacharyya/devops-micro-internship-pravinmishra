@@ -104,19 +104,19 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 #### Screenshot 11 — Desktop EC2 view showing the polished footer
 
-Add your screenshot here.
+![Screenshot 11](./screenshots/week-05-devops-lifecycle-03-11.png)
 
 ---
 
 #### Screenshot 12 — Mobile responsive view showing the footer remains readable
 
-Add your screenshot here.
+![Screenshot 12](./screenshots/week-05-devops-lifecycle-03-12.png)
 
 ---
 
 #### Screenshot 13 — Jira Story comment showing the Day 3 Daily Scrum update
 
-Add your screenshot here.
+![Screenshot 13](./screenshots/week-05-devops-lifecycle-03-13.png)
 
 ---
 
@@ -201,16 +201,16 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Sprint 1 started with the required Sprint Goal (Screenshots 1 & 2)
-- [ ] Task 2: Day 1 footer implemented, committed, and deployed (Screenshots 3–6)
-- [ ] Task 3: Day 2 deploy date made dynamic and documented (Screenshots 7–10)
-- [ ] Task 4: Day 3 footer polished and validated on desktop and mobile (Screenshots 11–13)
-- [ ] Task 5: Day 4 DMI Discord call-to-action deployed and clickable (Screenshot 14)
-- [ ] Task 6: Day 5 demo, retrospective, and Burndown evidence completed (Screenshots 15–17, video URL)
-- [ ] Daily Scrum comments posted for Days 1–5
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in required screenshots
-- [ ] No sensitive data exposed
+- [x] Task 1: Sprint 1 started with the required Sprint Goal (Screenshots 1 & 2)
+- [x] Task 2: Day 1 footer implemented, committed, and deployed (Screenshots 3–6)
+- [x] Task 3: Day 2 deploy date made dynamic and documented (Screenshots 7–10)
+- [x] Task 4: Day 3 footer polished and validated on desktop and mobile (Screenshots 11–13)
+- [x] Task 5: Day 4 DMI Discord call-to-action deployed and clickable (Screenshot 14)
+- [x] Task 6: Day 5 demo, retrospective, and Burndown evidence completed (Screenshots 15–17, video URL)
+- [x] Daily Scrum comments posted for Days 1–5
+- [x] LinkedIn post published and URL submitted
+- [x] Full Name visible in required screenshots
+- [x] No sensitive data exposed
 
 ---
 
