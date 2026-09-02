@@ -96,7 +96,7 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 #### Screenshot 6 — Backlog showing Story Points visible, or two or three Stories opened showing their points
 
-Add your screenshot here.
+![Screenshot 6](./screenshots/week-05-devops-lifecycle-04-06.jpg)
 
 ---
 
@@ -104,7 +104,39 @@ Add your screenshot here.
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+#### Story Points Justification
+
+##### Story 1: Hero Tagline Clarity — **1 Point**
+
+Simple text replacement on the homepage hero section with no conditional logic or complex styling required. Only requires updating HTML and basic responsive testing.
+
+##### Story 2: Job Detail Apply Now CTA — **1 Point**
+
+Single button element addition to an existing page layout. Minimal technical work (add button HTML, link href, basic styling) with no data processing or complex interactions.
+
+##### Story 3: Job Card Typography — **2 Points**
+
+Requires CSS updates across multiple card components throughout the site, responsive testing across breakpoints (mobile/tablet/desktop), and ensuring visual hierarchy doesn't break other elements. Medium complexity due to scope and QA effort.
+
+##### Story 4: Primary CTA Color — **1 Point**
+
+Global CSS variable or color property change across the codebase. Straightforward find-and-replace in styling with minimal risk; hover states are standard implementations.
+
+##### Story 5: Remote Badge — **2 Points**
+
+Requires conditional rendering logic (check if card has remote flag), new UI component design/styling, data model integration, and testing across filters. Higher complexity due to data dependency and component addition.
+
+##### Story 6: Advanced Search Labels — **2 Points**
+
+Involves form refactoring, label-input associations (accessibility), placeholder text updates, responsive layout validation, and cross-browser testing. Medium-high effort due to accessibility requirements and form complexity.
+
+##### Story 7: Posted On Date Text — **1 Point**
+
+Simple text field addition to card template with static content (no timestamp logic required). Minimal implementation effort; just output the date string from data.
+
+##### Story 8: Footer Trust Links — **2 Points**
+
+Requires adding two new links, ensuring keyboard focus/accessibility compliance, routing/navigation setup, and validating layout consistency. Two points due to accessibility standards and testing requirements.
 
 ---
 
@@ -118,13 +150,13 @@ Create Sprint 1, move three or four Stories into it (approximately 3–6 points)
 
 #### Screenshot 7 — Sprint 1 with the selected Stories inside it
 
-Add your screenshot here.
+![Screenshot 7](./screenshots/week-05-devops-lifecycle-04-07.jpg)
 
 ---
 
 #### Screenshot 8 — One Story showing the Sub-tasks created
 
-Add your screenshot here.
+![Screenshot 8](./screenshots/week-05-devops-lifecycle-04-08.jpg)
 
 ---
 
@@ -138,7 +170,7 @@ Open the Burndown Chart and confirm it exists for Sprint 1. It is acceptable if 
 
 #### Screenshot 9 — Burndown Chart page opened, even if empty
 
-Add your screenshot here.
+![Screenshot 9](./screenshots/week-05-devops-lifecycle-04-09.jpg)
 
 ---
 
@@ -152,19 +184,19 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
+![Screenshot 10](./screenshots/week-05-devops-lifecycle-04-10.jpg)
 
 ---
 
 #### Screenshot 11 — Git commit output
 
-Add your screenshot here.
+![Screenshot 11](./screenshots/week-05-devops-lifecycle-04-11.jpg)
 
 ---
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
+![Screenshot 12](./screenshots/week-05-devops-lifecycle-04-12.jpg)
 
 ---
 
@@ -178,7 +210,7 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
+![Screenshot 13](./screenshots/week-05-devops-lifecycle-04-13.jpg)
 
 ---
 
@@ -194,13 +226,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[LinkedIn Post](https://www.linkedin.com/posts/subhamay-bhattacharyya-67753329_scrum-productmanagement-devops-share-7500729191152234496-EXyt/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXzlvsBLGMTn7whkbpl6JdhO70ZuveqIQY)
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
+![Screenshot 14](./screenshots/week-05-devops-lifecycle-04-14.jpg)
 
 ---
 
@@ -214,18 +246,18 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Team Mode or Solo Mode selected and all four roles documented (Screenshot 1 & Notes)
-- [ ] Task 2: Team-managed Scrum project created with the required name (Screenshot 2)
-- [ ] Task 3: UI improvement Epic created (Screenshot 3)
-- [ ] Task 4: 6–8 Stories added under the Epic and ranked by value (Screenshots 4 & 5)
-- [ ] Task 5: Story Points set (1, 2, or 3) with reasoning recorded (Screenshot 6 & Notes)
-- [ ] Task 6: Sprint 1 created with Sprint Goal, 3–4 Stories, and Sub-tasks (Screenshots 7 & 8)
-- [ ] Task 7: Burndown Chart opened (Screenshot 9)
-- [ ] Task 8: One UI-only increment implemented, committed, deployed, and verified (Screenshots 10–12)
-- [ ] Task 9: Retro comment with one Scrum pillar and one Scrum value (Screenshot 13)
-- [ ] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
-- [ ] Full Name visible in required screenshots
-- [ ] No sensitive data exposed
+- [x] Task 1: Team Mode or Solo Mode selected and all four roles documented (Screenshot 1 & Notes)
+- [x] Task 2: Team-managed Scrum project created with the required name (Screenshot 2)
+- [x] Task 3: UI improvement Epic created (Screenshot 3)
+- [x] Task 4: 6–8 Stories added under the Epic and ranked by value (Screenshots 4 & 5)
+- [x] Task 5: Story Points set (1, 2, or 3) with reasoning recorded (Screenshot 6 & Notes)
+- [x] Task 6: Sprint 1 created with Sprint Goal, 3–4 Stories, and Sub-tasks (Screenshots 7 & 8)
+- [x] Task 7: Burndown Chart opened (Screenshot 9)
+- [x] Task 8: One UI-only increment implemented, committed, deployed, and verified (Screenshots 10–12)
+- [x] Task 9: Retro comment with one Scrum pillar and one Scrum value (Screenshot 13)
+- [x] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
+- [x] Full Name visible in required screenshots
+- [x] No sensitive data exposed
 
 ---
 
