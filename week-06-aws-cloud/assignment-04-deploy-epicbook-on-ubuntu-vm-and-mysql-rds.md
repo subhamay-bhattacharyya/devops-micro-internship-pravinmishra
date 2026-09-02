@@ -46,13 +46,13 @@ Create `epicbook-ec2-sg` (SSH from your IP, HTTP/HTTPS public) and `epicbook-rds
 
 #### Screenshot 4 — EC2 security-group inbound rules showing ports and sources
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-06-aws-cloud-04-04.jpg)
 
 ---
 
 #### Screenshot 5 — RDS security-group inbound rule showing MySQL 3306 allowed from the EC2 security group
 
-Add your screenshot here.
+![Screenshot 5](./screenshots/week-06-aws-cloud-04-05.jpg)
 
 ---
 
@@ -66,13 +66,13 @@ Launch an Ubuntu 20.04 instance in the public subnet with `epicbook-ec2-sg` atta
 
 #### Screenshot 6 — EC2 instance summary showing the public IPv4 address, subnet, and security group
 
-Add your screenshot here.
+![Screenshot 6](./screenshots/week-06-aws-cloud-04-06.jpg)
 
 ---
 
 #### Screenshot 7 — Terminal showing a successful SSH login with the `ubuntu@...` prompt
 
-Add your screenshot here.
+![Screenshot 7](./screenshots/week-06-aws-cloud-04-07.jpg)
 
 ---
 
@@ -86,19 +86,19 @@ Install Node.js, npm, Nginx, and the MySQL client on the instance, and confirm N
 
 #### Screenshot 8 — Output of `node -v` and `npm -v`
 
-Add your screenshot here.
+![Screenshot 8](./screenshots/week-06-aws-cloud-04-08.jpg)
 
 ---
 
 #### Screenshot 9 — Output of `systemctl status nginx`
 
-Add your screenshot here.
+![Screenshot 9](./screenshots/week-06-aws-cloud-04-09.jpg)
 
 ---
 
 #### Screenshot 10 — Output of `mysql --version`
 
-Add your screenshot here.
+![Screenshot 10](./screenshots/week-06-aws-cloud-04-10.jpg)
 
 ---
 
