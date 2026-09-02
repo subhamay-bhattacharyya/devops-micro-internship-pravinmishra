@@ -62,7 +62,7 @@ Enable S3 Static Website Hosting with `index.html` as the index document and `er
 
 #### Screenshot 4 — Static website hosting enabled screen showing the Website endpoint
 
-![Screenshot 4](./screenshots/week-06-aws-cloud-02-04.png)
+![Screenshot 4](./screenshots/week-06-aws-cloud-02-04.jpg)
 
 ---
 
@@ -76,7 +76,7 @@ Adjust Block Public Access settings and save a bucket policy that grants public 
 
 #### Screenshot 5 — Bucket policy page showing the policy saved successfully, with the bucket name visible
 
-![Screenshot 5](./screenshots/week-06-aws-cloud-02-05.png)
+![Screenshot 5](./screenshots/week-06-aws-cloud-02-05.jpg)
 
 ---
 
@@ -90,7 +90,7 @@ Load the site through the S3 website endpoint and confirm the homepage, images, 
 
 #### Screenshot 6 — Browser showing the live website with the S3 website endpoint visible in the address bar
 
-![Screenshot 6](./screenshots/week-06-aws-cloud-02-06.png)
+![Screenshot 6](./screenshots/week-06-aws-cloud-02-06.jpg)
 
 ---
 
@@ -104,7 +104,7 @@ Edit a small visible detail, re-upload it to S3, and confirm the change appears 
 
 #### Screenshot 7 (optional) — Before and after views, or a browser view showing the updated text
 
-![Screenshot 7](./screenshots/week-06-aws-cloud-02-07.png)
+![Screenshot 7](./screenshots/week-06-aws-cloud-02-07.jpg)
 
 ---
 
