@@ -146,13 +146,13 @@ Clone the EpicBook repository, install backend dependencies, configure `.env` wi
 
 #### Screenshot 14 — Terminal showing the repository cloned and the `ls` output
 
-Add your screenshot here.
+![Screenshot 14](./screenshots/week-06-aws-cloud-04-14.jpg)
 
 ---
 
 #### Screenshot 15 — Terminal showing the backend running, or `ss -tulpn` showing the port open
 
-Add your screenshot here.
+![Screenshot 15](./screenshots/week-06-aws-cloud-04-15.jpg)
 
 ---
 
