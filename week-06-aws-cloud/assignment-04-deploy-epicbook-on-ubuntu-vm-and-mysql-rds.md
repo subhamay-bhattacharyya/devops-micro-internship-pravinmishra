@@ -172,13 +172,13 @@ Copy the frontend files to the Nginx web root and configure Nginx to reverse-pro
 
 #### Screenshot 17 — `nginx -t` success output
 
-Add your screenshot here.
+![Screenshot 17](./screenshots/week-06-aws-cloud-04-17.jpg)
 
 ---
 
 #### Screenshot 18 — Nginx configuration snippet showing the `/api/` reverse proxy
 
-Add your screenshot here.
+![Screenshot 18](./screenshots/week-06-aws-cloud-04-18.jpg)
 
 ---
 
@@ -192,19 +192,19 @@ Verify the frontend loads publicly, the backend responds through Nginx, and EC2 
 
 #### Screenshot 19 — Browser showing the EpicBook application loaded with the public IP visible
 
-Add your screenshot here.
+![Screenshot 19](./screenshots/week-06-aws-cloud-04-19.jpg)
 
 ---
 
 #### Screenshot 20 — Terminal showing a successful API call through the public endpoint, such as `curl http://<EC2_PUBLIC_IP>/api/...`
 
-Add your screenshot here.
+![Screenshot 20](./screenshots/week-06-aws-cloud-04-20.jpg)
 
 ---
 
 #### Screenshot 21 — Terminal showing the successful database connectivity test using `SELECT 1;` or similar
 
-Add your screenshot here.
+![Screenshot 21](./screenshots/week-06-aws-cloud-04-21.jpg)
 
 ---
 
@@ -217,16 +217,16 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: VPC, public/private subnets, IGW, and public routing created (Screenshots 1–3)
-- [ ] Task 2: Least-privilege EC2 and RDS security groups created (Screenshots 4–5)
-- [ ] Task 3: Ubuntu EC2 launched in the public subnet with SSH verified (Screenshots 6–7)
-- [ ] Task 4: Node.js, npm, Nginx, and MySQL client installed (Screenshots 8–10)
-- [ ] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
-- [ ] Task 6: Database initialized from the SQL dump (Screenshot 13)
-- [ ] Task 7: Backend deployed and responding on port 3000 (Screenshots 14–16)
-- [ ] Task 8: Nginx serving the frontend and reverse-proxying to the backend (Screenshots 17–18)
-- [ ] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
-- [ ] No sensitive data exposed
+- [x] Task 1: VPC, public/private subnets, IGW, and public routing created (Screenshots 1–3)
+- [x] Task 2: Least-privilege EC2 and RDS security groups created (Screenshots 4–5)
+- [x] Task 3: Ubuntu EC2 launched in the public subnet with SSH verified (Screenshots 6–7)
+- [x] Task 4: Node.js, npm, Nginx, and MySQL client installed (Screenshots 8–10)
+- [x] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
+- [x] Task 6: Database initialized from the SQL dump (Screenshot 13)
+- [x] Task 7: Backend deployed and responding on port 3000 (Screenshots 14–16)
+- [x] Task 8: Nginx serving the frontend and reverse-proxying to the backend (Screenshots 17–18)
+- [x] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
+- [x] No sensitive data exposed
 
 ---
 
