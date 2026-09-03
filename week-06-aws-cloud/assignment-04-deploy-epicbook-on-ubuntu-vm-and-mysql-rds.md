@@ -158,7 +158,7 @@ Clone the EpicBook repository, install backend dependencies, configure `.env` wi
 
 #### Screenshot 16 — `curl` output proving the backend responds; a 200, 301, or 404 response is acceptable if the service responds
 
-Add your screenshot here.
+![Screenshot 16](./screenshots/week-06-aws-cloud-04-16.jpg)
 
 ---
 
