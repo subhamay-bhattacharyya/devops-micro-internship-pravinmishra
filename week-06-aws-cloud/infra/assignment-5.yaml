@@ -1,0 +1,380 @@
+---
+
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description: |
+  CloudFormation template to create a VPC with public and private subnets,
+  internet gateway, and route tables. Accepts project name and CIDR blocks as parameters.
+  Creates: 1 VPC, 2 public subnets, 4 private subnets, 1 IGW, 2 route tables (public & private)
+
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label:
+          default: "Project Configuration"
+        Parameters:
+          - ProjectName
+      - Label:
+          default: "Network Configuration - VPC"
+        Parameters:
+          - VpcCidr
+      - Label:
+          default: "Network Configuration - Public Subnets"
+        Parameters:
+          - PublicSubnet1Cidr
+          - PublicSubnet2Cidr
+      - Label:
+          default: "Network Configuration - Private Subnets"
+        Parameters:
+          - PrivateSubnet1Cidr
+          - PrivateSubnet2Cidr
+    ParameterLabels:
+      ProjectName:
+        default: "Project Name"
+      VpcCidr:
+        default: "VPC CIDR Block"
+      PublicSubnet1Cidr:
+        default: "Public Subnet 1 CIDR"
+      PublicSubnet2Cidr:
+        default: "Public Subnet 2 CIDR"
+      PrivateSubnet1Cidr:
+        default: "Private Subnet 1 CIDR"
+      PrivateSubnet2Cidr:
+        default: "Private Subnet 2 CIDR"
+
+Parameters:
+  ProjectName:
+    Type: String
+    Description: Name of the project (used for naming all resources)
+    MinLength: 1
+    MaxLength: 32
+    AllowedPattern: ^[a-zA-Z0-9-]*$
+    ConstraintDescription: Must be alphanumeric and hyphens only, 1-32 characters
+
+  VpcCidr:
+    Type: String
+    Description: CIDR block for the VPC
+    Default: 10.0.0.0/16
+    AllowedPattern: ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$
+    ConstraintDescription: Must be a valid CIDR block (e.g., 10.0.0.0/16)
+
+  PublicSubnet1Cidr:
+    Type: String
+    Description: CIDR block for Public Subnet 1
+    Default: 10.0.1.0/24
+    AllowedPattern: ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$
+    ConstraintDescription: Must be a valid CIDR block
+
+  PublicSubnet2Cidr:
+    Type: String
+    Description: CIDR block for Public Subnet 2
+    Default: 10.0.2.0/24
+    AllowedPattern: ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$
+    ConstraintDescription: Must be a valid CIDR block
+
+  PrivateSubnet1Cidr:
+    Type: String
+    Description: CIDR block for Private Subnet 1
+    Default: 10.0.11.0/24
+    AllowedPattern: ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$
+    ConstraintDescription: Must be a valid CIDR block
+
+  PrivateSubnet2Cidr:
+    Type: String
+    Description: CIDR block for Private Subnet 2
+    Default: 10.0.12.0/24
+    AllowedPattern: ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$
+    ConstraintDescription: Must be a valid CIDR block
+
+
+Resources:
+  # ============================================================================
+  # VPC
+  # ============================================================================
+  Vpc:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: !Ref VpcCidr
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
+      Tags:
+        - Key: Name
+          Value: !Sub ${ProjectName}-vpc
+        - Key: Project
+          Value: !Ref ProjectName
+
+  # ============================================================================
+  # Internet Gateway
+  # ============================================================================
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Sub ${ProjectName}-igw
+        - Key: Project
+          Value: !Ref ProjectName
+
+  AttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref Vpc
+      InternetGatewayId: !Ref InternetGateway
+
+  # ============================================================================
+  # Public Subnets
+  # ============================================================================
+  PublicSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Vpc
+      CidrBlock: !Ref PublicSubnet1Cidr
+      AvailabilityZone: !Select
+        - 0
+        - !GetAZs ''
+      Tags:
+        - Key: Name
+          Value: !Sub ${ProjectName}-public-subnet-1
+        - Key: Project
+          Value: !Ref ProjectName
+        - Key: Type
+          Value: Public
+
+  PublicSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Vpc
+      CidrBlock: !Ref PublicSubnet2Cidr
+      AvailabilityZone: !Select
+        - 1
+        - !GetAZs ''
+      Tags:
+        - Key: Name
+          Value: !Sub ${ProjectName}-public-subnet-2
+        - Key: Project
+          Value: !Ref ProjectName
+        - Key: Type
+          Value: Public
+
+  # ============================================================================
+  # Private Subnets
+  # ============================================================================
+  PrivateSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Vpc
+      CidrBlock: !Ref PrivateSubnet1Cidr
+      AvailabilityZone: !Select
+        - 0
+        - !GetAZs ''
+      Tags:
+        - Key: Name
+          Value: !Sub ${ProjectName}-private-subnet-1
+        - Key: Project
+          Value: !Ref ProjectName
+        - Key: Type
+          Value: Private
+
+  PrivateSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Vpc
+      CidrBlock: !Ref PrivateSubnet2Cidr
+      AvailabilityZone: !Select
+        - 1
+        - !GetAZs ''
+      Tags:
+        - Key: Name
+          Value: !Sub ${ProjectName}-private-subnet-2
+        - Key: Project
+          Value: !Ref ProjectName
+        - Key: Type
+          Value: Private
+
+  # ============================================================================
+  # Public Route Table
+  # ============================================================================
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref Vpc
+      Tags:
+        - Key: Name
+          Value: !Sub ${ProjectName}-public-rt
+        - Key: Project
+          Value: !Ref ProjectName
+        - Key: Type
+          Value: Public
+
+  PublicRoute:
+    Type: AWS::EC2::Route
+    DependsOn: AttachGateway
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+
+  PublicSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1
+      RouteTableId: !Ref PublicRouteTable
+
+  PublicSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet2
+      RouteTableId: !Ref PublicRouteTable
+
+  # ============================================================================
+  # Elastic IPs for NAT Gateways
+  # ============================================================================
+  NatGatewayEIP:
+    Type: AWS::EC2::EIP
+    DependsOn: AttachGateway
+    Properties:
+      Domain: vpc
+      Tags:
+        - Key: Name
+          Value: !Sub ${ProjectName}-nat-eip
+        - Key: Project
+          Value: !Ref ProjectName
+
+  # ============================================================================
+  # NAT Gateway
+  # ============================================================================
+  NatGateway:
+    Type: AWS::EC2::NatGateway
+    Properties:
+      AllocationId: !GetAtt NatGatewayEIP.AllocationId
+      SubnetId: !Ref PublicSubnet1
+      Tags:
+        - Key: Name
+          Value: !Sub ${ProjectName}-nat-gw
+        - Key: Project
+          Value: !Ref ProjectName
+
+  # ============================================================================
+  # Private Route Table
+  # ============================================================================
+  PrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref Vpc
+      Tags:
+        - Key: Name
+          Value: !Sub ${ProjectName}-private-rt
+        - Key: Project
+          Value: !Ref ProjectName
+        - Key: Type
+          Value: Private
+
+  PrivateRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref PrivateRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId: !Ref NatGateway
+
+  PrivateSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet1
+      RouteTableId: !Ref PrivateRouteTable
+
+  PrivateSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet2
+      RouteTableId: !Ref PrivateRouteTable
+
+Outputs:
+  VpcId:
+    Description: VPC ID
+    Value: !Ref Vpc
+    Export:
+      Name: !Sub ${ProjectName}-VpcId
+
+  VpcCidrBlock:
+    Description: VPC CIDR Block
+    Value: !GetAtt Vpc.CidrBlock
+    Export:
+      Name: !Sub ${ProjectName}-VpcCidr
+
+  VpcArn:
+    Description: VPC ARN
+    Value: !Sub arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:vpc/${Vpc}
+    Export:
+      Name: !Sub ${ProjectName}-VpcArn
+
+  InternetGatewayId:
+    Description: Internet Gateway ID
+    Value: !Ref InternetGateway
+    Export:
+      Name: !Sub ${ProjectName}-InternetGatewayId
+
+  PublicSubnet1Id:
+    Description: Public Subnet 1 ID
+    Value: !Ref PublicSubnet1
+    Export:
+      Name: !Sub ${ProjectName}-PublicSubnet1Id
+
+  PublicSubnet2Id:
+    Description: Public Subnet 2 ID
+    Value: !Ref PublicSubnet2
+    Export:
+      Name: !Sub ${ProjectName}-PublicSubnet2Id
+
+  PrivateSubnet1Id:
+    Description: Private Subnet 1 ID
+    Value: !Ref PrivateSubnet1
+    Export:
+      Name: !Sub ${ProjectName}-PrivateSubnet1Id
+
+  PrivateSubnet2Id:
+    Description: Private Subnet 2 ID
+    Value: !Ref PrivateSubnet2
+    Export:
+      Name: !Sub ${ProjectName}-PrivateSubnet2Id
+
+  PublicRouteTableId:
+    Description: Public Route Table ID
+    Value: !Ref PublicRouteTable
+    Export:
+      Name: !Sub ${ProjectName}-PublicRouteTableId
+
+  # AllPublicSubnets:
+  #   Description: Comma-separated list of all public subnet IDs
+  #   Value: !Join
+  #     - ','
+  #     - - !Ref PublicSubnet1
+  #       - !Ref PublicSubnet2
+  #   Export:
+  #     Name: !Sub ${ProjectName}-AllPublicSubnets
+
+  AllPrivateSubnets:
+    Description: Comma-separated list of all private subnet IDs
+    Value: !Join
+      - ','
+      - - !Ref PrivateSubnet1
+        - !Ref PrivateSubnet2
+    Export:
+      Name: !Sub ${ProjectName}-AllPrivateSubnets
+
+  PrivateRouteTableId:
+    Description: Private Route Table ID
+    Value: !Ref PrivateRouteTable
+    Export:
+      Name: !Sub ${ProjectName}-PrivateRouteTableId
+
+  NatGatewayId:
+    Description: NAT Gateway ID
+    Value: !Ref NatGateway
+    Export:
+      Name: !Sub ${ProjectName}-NatGatewayId
+
+  NatGatewayEIP:
+    Description: NAT Gateway Elastic IP Address
+    Value: !Ref NatGatewayEIP
+    Export:
+      Name: !Sub ${ProjectName}-NatGatewayEIP

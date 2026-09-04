@@ -20,31 +20,31 @@ Build a VPC (10.0.0.0/16) with two public and two private subnets across two Ava
 
 #### Screenshot 1 — VPC details showing CIDR 10.0.0.0/16
 
-Add your screenshot here.
+![Screenshot 1](./screenshots/week-06-aws-cloud-05-01.jpg)
 
 ---
 
 #### Screenshot 2 — Subnets list showing four subnets and their Availability Zones
 
-Add your screenshot here.
+![Screenshot 2](./screenshots/week-06-aws-cloud-05-02.jpg)
 
 ---
 
 #### Screenshot 3 — Public route table showing the Internet Gateway route and both public-subnet associations
 
-Add your screenshot here.
+![Screenshot 3](./screenshots/week-06-aws-cloud-05-03.jpg)
 
 ---
 
 #### Screenshot 4 — Private route table showing the NAT Gateway route and both private-subnet associations
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/week-06-aws-cloud-05-04.jpg)
 
 ---
 
 #### Screenshot 5 — NAT Gateway status showing Available and the Elastic IP
 
-Add your screenshot here.
+![Screenshot 5](./screenshots/week-06-aws-cloud-05-05.jpg)
 
 ---
 
