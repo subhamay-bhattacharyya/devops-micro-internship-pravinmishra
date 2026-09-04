@@ -58,19 +58,19 @@ Create `ha-alb-sg` (HTTP public), `ha-web-sg` (HTTP only from `ha-alb-sg`, SSH f
 
 #### Screenshot 6 — ALB Security Group inbound rules
 
-Add your screenshot here.
+![Screenshot 6](./screenshots/week-06-aws-cloud-05-06.jpg)
 
 ---
 
 #### Screenshot 7 — EC2 Security Group inbound rules showing the ALB Security Group reference and SSH from your IP
 
-Add your screenshot here.
+![Screenshot 7](./screenshots/week-06-aws-cloud-05-07.jpg)
 
 ---
 
 #### Screenshot 8 — RDS Security Group inbound rule showing the database port allowed only from the EC2 Security Group
 
-Add your screenshot here.
+![Screenshot 8](./screenshots/week-06-aws-cloud-05-08.jpg)
 
 ---
 
